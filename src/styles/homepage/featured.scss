@@ -1,0 +1,141 @@
+.hp-featured {
+  padding-bottom: 16rem;
+
+
+  .featured__container {
+    display: flex;
+    flex-wrap: wrap;
+
+    .featured__icons {
+      width: 40%;
+      display: flex;
+      flex-direction: column;
+      padding-right: 100px;
+
+      .icons__item {
+        display: flex;
+        align-items: center;
+        margin-bottom: 2.5rem;
+
+        &:last-of-type {
+          margin-bottom: 0;
+        }
+
+        .icons__icon {
+          width: 84px;
+          height: 84px;
+          border-radius: 50%;
+          background: $color-primary;
+          display: flex;
+          flex-shrink: 0;
+
+          img {
+            width: 50%;
+            margin: auto;
+          }
+        }
+
+        .icons__content {
+          font-size: 1.6rem;
+          font-weight: 700;
+          margin-left: 3rem;
+        }
+      }
+    }
+  }
+
+
+  .featured__content {
+    width: calc(60% - 100px);
+    background: $color-white;
+    border-radius: 5px;
+    padding: 4rem;
+    color: $color-black;
+    position: relative;
+
+
+    h2 {
+      font-size: 3.6rem;
+      margin-bottom: 3rem;
+      text-align: left;
+    }
+
+    p {
+      font-size: 1.6rem;
+      padding-right: 50px;
+    }
+
+    .featured__content__icon {
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      background: $color-secondary;
+      display: flex;
+      position: absolute;
+      right: -100px;
+      bottom: -50px;
+
+      img {
+        width: 50%;
+        margin: auto;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+
+  .hp-featured {
+    padding-bottom: 10rem;
+
+    .featured__container {
+
+      .featured__icons {
+        width: 100%;
+        padding-right: 0;
+
+        .icons__item {
+          margin-bottom: 4rem;
+
+          &:last-of-type {
+            margin-bottom: 6rem;
+          }
+
+          .icons__icon {
+            flex-shrink: 0;
+          }
+        }
+      }
+    }
+
+
+    .featured__content {
+      width: 100%;
+      padding: 3rem 3rem 8rem 3rem;
+
+      h2 {
+        font-size: 2.6rem;
+        margin-bottom: 2rem;
+      }
+
+      p {
+        font-size: 2rem;
+        padding-right: 0;
+      }
+
+      .featured__content__icon {
+        width: 120px;
+        height: 120px;
+        position: absolute;
+        left: calc(50% - 60px);
+        bottom: -60px;
+
+        img {
+          width: 50%;
+          height: auto;
+          margin: auto;
+        }
+      }
+    }
+  }
+}

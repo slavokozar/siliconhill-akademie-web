@@ -1,0 +1,44 @@
+.accomodation-container {
+  display: flex;
+  padding-left: 10rem;
+
+  .accomodation__item {
+    width: 50%;
+    margin-right: 2rem;
+
+    &:last-of-type {
+      margin-right: 0;
+    }
+
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      text-transform: uppercase;
+    }
+
+    h3 {
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+      font-weight: 600;
+      text-align: left;
+
+    }
+
+    p, li {
+      margin-bottom: 1rem;
+      font-size: 1.4rem;
+      line-height: 2.2rem;
+    }
+
+    a {
+      color: $color-primary;
+      font-weight: 600;
+      text-decoration: underline;
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
+
+  }
+}

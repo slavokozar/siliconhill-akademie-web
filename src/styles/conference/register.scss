@@ -1,0 +1,272 @@
+.highlight {
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 0 0 0 rgba(0, 169, 157, 1);
+    transform: scale(1);
+    animation: pulse 1.5s forwards;
+    animation-iteration-count: 2;
+    border-radius: 6px;
+
+    @keyframes pulse {
+      0% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 rgba(0, 169, 157, .5);
+      }
+
+      70% {
+        transform: scale(1.05);
+        box-shadow: 0 0 0 20px rgba(0, 169, 157, 0);
+      }
+
+      100% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 rgba(0, 169, 157, 0);
+      }
+    }
+  }
+}
+
+
+.address {
+
+  .input-container {
+
+    &:first-of-type {
+      flex-grow: 2;
+    }
+
+    &:last-of-type {
+      flex-grow: 1;
+    }
+  }
+}
+
+.register {
+  display: flex;
+  flex-wrap: wrap;
+
+  .reg-form-container {
+    display: flex;
+    flex-direction: column;
+    width: 46%;
+    margin-left: 27%;
+  }
+
+  .reg-form__block {
+    position: relative;
+    margin-top: 6rem;
+
+    &:first-of-type {
+      margin-top: 0;
+    }
+
+    .reg-form__no {
+      width: 70px;
+      height: 70px;
+      background: $color-bright;
+      border-radius: 50%;
+      position: absolute;
+      top: -25px;
+      left: calc(-80px - 35px);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 1;
+
+      span {
+        font-size: 2.8rem;
+        font-weight: 700;
+        color: $color-light-gray;
+      }
+    }
+
+    &:after {
+      content: '';
+      position: absolute;
+      left: -80px;
+      top: 0;
+      width: 3px;
+      height: calc(100% + 7rem);
+      background: $color-bright;
+    }
+
+    &:last-of-type {
+      margin-bottom: 0;
+
+      &:after {
+        display: none;
+      }
+    }
+
+    h3 {
+      margin-bottom: 1rem;
+    }
+
+    .reg-form__cart {
+      //border: 1px solid $color-bright;
+      border-radius: 5px;
+
+      .cart__body {
+        background: $color-white;
+        border-radius: 5px;
+        border: 1px solid $color-bright;
+        overflow: hidden;
+        box-shadow: 1px 1px 10px rgb(0 0 0 / 10%);
+
+
+        .cart__row {
+          border-bottom: 1px solid $color-bright;
+
+          &:last-of-type {
+            border-bottom: 0;
+            background: $color-light;
+
+            .cart__name {
+              font-weight: 600;
+              font-size: 1.5rem;
+            }
+
+            .cart__price {
+
+            }
+          }
+        }
+      }
+
+      .cart__footer {
+        background: $color-light;
+        border-radius: 0 0 5px 5px;
+      }
+
+      .cart__row {
+        padding: 1rem 2rem;
+        display: flex;
+        align-items: center;
+
+        .cart__column {
+          width: 33.3%;
+
+          .cart__name {
+            font-size: 1.3rem;
+          }
+
+          .cart__email {
+            color: $color-light-gray;
+            font-size: 1rem;
+          }
+
+          .cart__price {
+            font-size: 1.6rem;
+            font-weight: 600;
+          }
+        }
+      }
+
+    }
+
+    &.featured {
+
+      &:before {
+        content: '';
+        position: absolute;
+        top: -2rem;
+        left: -2rem;
+        width: calc(100% + 4rem);
+        height: calc(100% + 3rem);
+        border-radius: 5px;
+        border: 1px solid $color-black;
+        background: transparent;
+        z-index: 0;
+      }
+    }
+  }
+}
+
+@media (max-width: 1600px) {
+
+  .register {
+
+    .wrapper {
+      width: 100%;
+      margin: auto;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+
+
+  .register {
+
+    .reg-form-container {
+      width: 100%;
+      margin-left: 0;
+
+      .reg-form__block {
+        padding-bottom: 3rem;
+        margin-top: 2rem;
+
+        h3 {
+          margin-left: 4rem;
+          margin-bottom: 3rem;
+        }
+
+        .reg-form__no {
+          width: 30px;
+          height: 30px;
+          top: -5px;
+          left: 0;
+
+          span {
+            font-size: 1.8rem;
+          }
+        }
+      }
+    }
+  }
+
+
+  .form__name {
+    font-size: 1.4rem;
+  }
+
+  .register {
+
+    .wrapper {
+      width: 100%;
+      margin-left: 0;
+    }
+
+    .register-form__container {
+      flex-direction: column;
+    }
+
+    .register-form__column {
+      flex-basis: 100%;
+
+      .register-form__name {
+      }
+
+      &.featured {
+
+        &:before {
+          display: none;
+        }
+      }
+
+      &.mr {
+        margin-right: 0;
+      }
+
+      .btn {
+        margin-top: 2rem;
+      }
+    }
+  }
+}

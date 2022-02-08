@@ -1,0 +1,157 @@
+.conf-about {
+  display: flex;
+  flex-wrap: wrap;
+
+  .about__featured {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 10rem;
+    margin-bottom: 10rem;
+    width: 100%;
+
+    .about__featured-item {
+      flex: 1 0 25%;
+      text-align: center;
+
+      .about__featured-icon {
+
+        i {
+          color: $color-primary;
+          font-size: 6rem;
+        }
+      }
+
+      .about__featured-desc {
+        font-size: 1.6rem;
+        font-weight: 700;
+        margin-top: 2rem;
+      }
+    }
+  }
+
+  .about__desc {
+    padding-left: 10rem;
+
+    h3 {
+      font-size: 3rem;
+      margin-bottom: 1.4rem;
+      text-align: left;
+    }
+
+    p, li {
+      font-size: 1.6rem;
+      margin-bottom: 1rem;
+
+      &:last-of-type {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+.hp-about {
+  border-bottom: 1px solid $color-bright;
+
+  .about__featured {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+
+    .about__featured-item {
+      padding: 3rem;
+      flex: 1 0 25%;
+      text-align: center;
+      border-right: 1px solid $color-bright;
+
+      &:last-of-type {
+        border-right: none;
+      }
+
+
+      h3 {
+        font-size: 4.8rem;
+        font-weight: 700;
+        margin-bottom: 3rem;
+        position: relative;
+
+        &:after {
+          content: '';
+          position: absolute;
+          bottom: -20px;
+          left: calc(50% - 10px);
+          width: 20px;
+          height: 20px;
+          border-radius: 50%;
+          background: $color-primary;
+        }
+      }
+
+      p {
+        font-size: 1.6rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+
+  .conf-about {
+
+    .about__featured {
+      padding-left: 0;
+      margin-bottom: 5rem;
+      width: 100%;
+
+      .about__featured-item {
+        flex: 1 0 50%;
+        margin-bottom: 2rem;
+
+        .about__featured-icon {
+
+          img {
+            width: 20%;
+          }
+        }
+
+        .about__featured-desc {
+          font-size: 1.4rem;
+        }
+      }
+    }
+
+    .about__desc {
+      padding-left: 0;
+
+      h3 {
+        font-size: 2.4rem;
+        margin-bottom: .4rem;
+      }
+
+      p {
+        font-size: 1.6rem;
+      }
+    }
+  }
+
+  .hp-about {
+
+    .about__featured {
+
+      .about__featured-item {
+        border-right: none;
+        flex-basis: 100%;
+
+        h3 {
+          font-size: 5.4rem;
+          font-weight: 700;
+          margin-bottom: 3rem;
+          position: relative;
+        }
+
+        p {
+          font-size: 2rem;
+        }
+      }
+    }
+  }
+}

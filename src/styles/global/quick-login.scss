@@ -1,0 +1,30 @@
+.quick-login-container {
+    display: none;
+    padding: 2rem;
+    background: $color-white;
+    border: 1px solid $color-bright;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, .1);
+    border-radius: 5px;
+    position: absolute;
+    top: calc(100% - 5px);
+    right: 0;
+    width: 320px;
+
+    &.active{
+        display: block;
+    }
+
+    .quick-login__register {
+        text-align: center;
+
+        span {
+            font-size: 1.2rem;
+
+            a {
+                color: $color-secondary;
+                font-weight: 600;
+            }
+        }
+
+    }
+}

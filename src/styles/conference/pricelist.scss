@@ -1,0 +1,232 @@
+.pricelist {
+  padding-bottom: 8rem;
+}
+
+.pricelist-list {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+
+  .pricelist__item {
+    max-width: 450px;
+    flex: 1 1 100%;
+    max-width: 450px;
+    margin-right: 1.2rem;
+    padding: 3rem;
+    position: relative;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    background: white;
+    text-align: center;
+    color: $color-black;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, .1);
+    overflow: hidden;
+
+    &:last-of-type {
+      margin-right: 0;
+    }
+
+
+    &.t {
+      padding-top: 7.5rem;
+    }
+
+    &.b {
+      padding-bottom: 7.5rem;
+    }
+
+    .label-top {
+      padding: 1rem 0 1rem 0;
+      background: $color-tertiary;
+      color: $color-white;
+      font-weight: 700;
+      font-size: 1.6rem;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+    }
+
+    .label-bottom {
+      padding: 1rem 0;
+      background: $color-secondary;
+      color: $color-white;
+      font-weight: 700;
+      font-size: 1.6rem;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+    }
+
+    &.featured {
+      transform: scale(1.07);
+      z-index: 1;
+
+    }
+
+    .pricelist-tags-list {
+      display: flex;
+      justify-content: center;
+
+      .pricelist-tag__item {
+        text-transform: uppercase;
+        font-size: 1.8rem;
+        font-weight: 600;
+        margin-right: 1rem;
+
+        .s {
+          font-size: 1.4rem;
+        }
+
+        &:last-of-type {
+          margin-right: 0;
+        }
+      }
+    }
+
+    .pricelist__name {
+
+      h3 {
+        font-size: 2rem;
+
+      }
+    }
+
+    .pricelist__price {
+      margin: 2rem 0 3rem 0;
+      padding-bottom: 2rem;
+      border-bottom: 1px solid $color-bright;
+
+      .price__discount {
+        font-weight: 700;
+        color: $color-light-gray;
+      }
+
+      h4 {
+        font-size: 3rem;
+        font-weight: 700 !important;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+
+    .pricelist__features {
+      padding: 0;
+      margin: 0;
+      list-style: none;
+      font-size: 1.4rem;
+      font-weight: 600;
+      margin-bottom: 3rem;
+      text-align: left;
+
+      & > li {
+        margin-bottom: 2rem;
+        padding-top: 1px;
+        padding-left: 32px;
+        position: relative;
+
+        &:before {
+          content: '';
+          background: url("/img/pricelist-list-icon.svg");
+          background-size: contain;
+          width: 22px;
+          height: 22px;
+          position: absolute;
+          left: 0;
+          top: 0;
+        }
+
+        &:last-of-type {
+          margin-bottom: 0;
+        }
+
+        ul {
+          padding-left: 20px;
+          padding-top: 5px;
+
+          li {
+            margin-bottom: 5px;
+            list-style-type: disc;
+
+            &:last-of-type {
+              margin-bottom: 0;
+            }
+          }
+        }
+      }
+
+    }
+
+    .pricelist__desc {
+      margin-bottom: 3rem;
+
+      p {
+        font-size: 1.4rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+
+  .pricelist-list {
+    display: flex;
+    flex-direction: column;
+
+    .pricelist__item {
+      margin-right: 0;
+      margin-bottom: 2rem;
+      padding: 3rem 4rem;
+
+      &.featured {
+        transform: scale(1);
+
+        &:after {
+          font-size: 1.4rem;;
+        }
+      }
+
+      .pricelist-tags-list {
+
+        .pricelist-tag__item {
+          font-size: 1.4rem;
+        }
+      }
+
+      .pricelist__name {
+
+        h3 {
+          font-size: 1.6rem;
+        }
+      }
+
+      .pricelist__price {
+        margin: 3rem 0 2rem 0;
+
+        h4 {
+          font-size: 3.6rem;
+        }
+      }
+
+      .pricelist__features {
+        margin-bottom: 4rem;
+
+        li {
+
+          &:before {
+            width: 22px;
+            height: 22px;
+            background-size: cover;
+          }
+        }
+      }
+
+      .pricelist__desc {
+        margin-bottom: 3rem;
+      }
+    }
+  }
+}

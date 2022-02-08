@@ -1,0 +1,29 @@
+.loader-container {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: darken($color-primary, 1%);
+  display: flex;
+  border-radius: 5px;
+}
+
+.loader {
+  margin: auto;
+  border: 3px solid rgba(255, 255, 255, .1); /* Light grey */
+  border-top: 3px solid $color-secondary; /* Blue */
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

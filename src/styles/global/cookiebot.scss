@@ -1,0 +1,37 @@
+#CybotCookiebotDialog {
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2) !important;
+
+    h2, p, a, #CybotCookiebotDialogBodyContentText {
+        font-family: $font-primary !important;
+    }
+}
+
+#CybotCookiebotDialogBody {
+    max-width: 1140px !important;
+    padding: 0 2rem !important;
+
+    #CybotCookiebotDialogPoweredbyLink {
+        display: none;
+    }
+
+    #CybotCookiebotDialogBodyContent {
+        padding-left: 0 !important;
+        padding-top: 20px;
+    }
+
+    #CybotCookiebotDialogBodyButtons {
+        margin-left: 0 !important;
+        padding-left: 0 !important;
+    }
+
+    .CybotCookiebotDialogBodyButton {
+        margin-left: 0 !important;
+        border-radius: 4px !important;
+        padding: 5px 10px !important;
+        border: none;
+        background: $color-primary !important;
+    }
+}
+
+
+

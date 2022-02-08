@@ -1,0 +1,91 @@
+.register-steps {
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+  margin-left: 20%;
+
+  > i {
+    color: $color-secondary;
+    font-size: 1.8rem;
+    padding-top: 50px;
+  }
+
+  .step {
+    width: 130px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &.step1 {
+
+    }
+
+    .step__circle {
+      background: $color-light;
+      width: 120px;
+      height: 120px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50%;
+
+      i {
+        font-size: 5rem;
+        color: $color-gray;
+      }
+    }
+
+    .step__desc {
+      margin-top: 2rem;
+      font-size: 1.4rem;
+    }
+
+  }
+}
+
+@media (max-width: 768px) {
+
+  .register-steps {
+    width: 100%;
+    margin-left: 0;
+
+    > i {
+      font-size: 1.2rem;
+      padding-top: 35px;
+    }
+
+    .step {
+      width: 130px;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      &.step1 {
+
+      }
+
+      .step__circle {
+        background: $color-light;
+        width: 80px;
+        height: 80px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+
+        i {
+          font-size: 3rem;
+          color: $color-gray;
+        }
+      }
+
+      .step__desc {
+        margin-top: 1.2rem;
+        font-size: 1.2rem;
+      }
+
+    }
+  }
+}

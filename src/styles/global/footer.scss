@@ -1,0 +1,230 @@
+footer {
+  background: $color-black;
+  color: $color-white;
+  padding: 5rem 0;
+  //TODO vyhodit ked vyhodime under contruction hlasku
+  //padding-bottom: calc(66px + 5rem);
+
+  a {
+    color: $color-white;
+  }
+
+  .footer-container {
+
+    .footer__top {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .footer__bottom {
+
+    }
+  }
+
+  .footer__column {
+    flex-grow: 1;
+
+    &.footer__logo {
+
+      img {
+        height: 40px;
+        width: auto;
+      }
+    }
+
+    &.footer__menu {
+      margin-right: 3rem;
+
+      .menu__list {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 1rem;
+        padding-bottom: 1rem;
+        // border-bottom: 1px solid rgba(255, 255, 255, .25);
+
+        .menu__item {
+          margin-bottom: .4rem;
+
+          a {
+            text-decoration: none;
+            font-size: 1.4rem;
+
+            &:hover {
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+    }
+
+    &.footer__contact {
+      display: flex;
+      flex-direction: column;
+
+      .contact__item {
+        display: flex;
+        align-items: flex-start;
+        font-size: 1.8rem;
+        flex-shrink: 0;
+        margin-bottom: 1rem;
+        padding-bottom: 3.1rem;
+        //border-bottom: 1px solid rgba(255, 255, 255, .25);
+
+        a {
+          text-decoration: none;
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+
+        p {
+          line-height: 2.2rem;
+          font-size: 1.4rem;
+        }
+
+        .item__img {
+          width: 45px;
+
+          img {
+            margin-right: 2rem;
+          }
+        }
+
+        .item__address {
+        }
+
+        .item__information {
+        }
+      }
+
+      .footer__logos {
+        padding: 5px;
+        border-radius: 4px;
+        background: $color-white;
+        height: 34px;
+        align-self: flex-start;
+
+        img {
+          height: 24px;
+        }
+      }
+    }
+
+    &.footer__social {
+
+      .social__list {
+        display: flex;
+        margin-bottom: 1rem;
+
+        .social__icon {
+          margin-right: 1rem;
+
+          &:last-of-type {
+            margin-right: 0;
+          }
+
+          img {
+            width: 30px;
+          }
+        }
+      }
+
+      a {
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+.under-construction {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px 0;
+  background-color: $color-danger;
+  color: $color-white;
+  z-index: 99999;
+
+  p {
+    margin-bottom: 10px;
+    font-weight: 700;
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+
+  a {
+
+    &:hover {
+      text-decoration: underline;
+    }
+
+  }
+}
+
+@media (max-width: 768px) {
+
+  footer {
+    padding: 4rem 0;
+
+    .footer-container {
+      flex-direction: column;
+    }
+
+    .footer__column {
+
+      &.footer__logo {
+        flex-basis: 100%;
+      }
+
+      &.footer__menu {
+        margin-top: 3rem;
+        flex-basis: 100%;
+
+        .menu__list {
+
+          .menu__item {
+            flex: 1 1 50%;
+
+            a {
+              font-size: 1.4rem;
+            }
+          }
+        }
+      }
+
+      &.footer__contact {
+        //flex-basis: 100%;
+        margin-left: 0;
+        margin-top: 3rem;
+        flex-direction: column;
+
+        .contact__item {
+          font-size: 1.6rem;
+          //flex-basis: 100%;
+          margin-bottom: 2rem;
+
+          p {
+            line-height: 2.4rem;
+          }
+
+          .item__img {
+
+            img {
+              margin-right: 2rem;
+            }
+          }
+
+          .item__address {
+          }
+
+          .item__information {
+          }
+        }
+      }
+    }
+  }
+}

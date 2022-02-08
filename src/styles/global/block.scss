@@ -1,0 +1,41 @@
+.content-block {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid $color-bright;
+    padding: 2rem 0;
+
+    &:first-of-type {
+        padding-top: 0;
+    }
+
+    &:last-of-type {
+        border-bottom: none;
+    }
+
+    .block__column {
+
+
+        .block__heading {
+
+            h4 {
+                font-size: 1.8rem;
+                font-weight: 700;
+            }
+        }
+
+        .block__details {
+            display: flex;
+            margin-top: 1rem;
+
+            .detail__item {
+                font-size: 1.4rem;
+
+                img {
+                    width: 14px;
+                    height: 14px;
+                }
+            }
+        }
+
+    }
+}

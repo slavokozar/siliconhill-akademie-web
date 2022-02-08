@@ -1,0 +1,95 @@
+#flashes {
+
+  &.alert {
+    position: fixed;
+    width: 40rem;
+    top: -6rem;
+    right: calc(50% - 20rem);
+    z-index: 99;
+    animation: flash-animation 5s;
+    animation-fill-mode: forwards;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.05);
+    opacity: 1;
+    text-align: center;
+
+  }
+}
+
+.alert {
+  padding: 2rem;
+  border-radius: 5px;
+  font-size: 1.6rem;
+  font-weight: 400;
+  margin-bottom: 5rem;
+
+  a {
+    color: $color-white;
+    font-weight: 600;
+    text-decoration: underline;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+  &.alert--ml {
+    margin-left: 10rem;
+  }
+
+  &.alert--danger {
+    background: $color-danger;
+    color: $color-white;
+  }
+
+  &.alert--success {
+    background: $color-success;
+    color: $color-white;
+  }
+
+  &.alert--warning {
+    background: $color-warning;
+    color: $color-white;
+  }
+}
+
+@keyframes flash-animation {
+  0% {
+    opacity: 0;
+    top: -6rem
+  }
+  15% {
+    opacity: 1;
+    top: 1rem;
+  }
+
+  85% {
+    opacity: 1;
+    top: 1rem;
+  }
+
+  100% {
+    opacity: 0;
+    top: -6rem;
+  }
+}
+
+.fixed-alert {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding: 1rem 3rem;
+  background: $color-tertiary;
+
+  p {
+    color: $color-white;
+    margin-bottom: 0 !important;
+  }
+
+  &.auth {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 600;
+  }
+}

@@ -1,0 +1,46 @@
+---
+
+import Footer from '../components/Footer.astro';
+
+let {title} = Astro.props; 
+if(title === undefined) {
+    title = 'Akademie SiliconHill.cz';
+} else {
+    title = 'Akademie SiliconHill.cz | ' + title;
+}
+
+---
+
+<!DOCTYPE html>
+<html lang="cz">
+<head>
+    <!-- <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="108d524a-d63e-4a62-a8eb-02fbda2d0424"
+            data-blockingmode="auto" type="text/javascript"></script> -->
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>{title}</title>
+
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.14.0/css/all.css"
+            integrity="sha384-VhBcF/php0Z/P5ZxlxaEx1GwqTQVIBu4G4giRWxTKOCjTxsPFETUDdVL5B6vYvOt" crossorigin="anonymous">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&display=swap"
+          rel="stylesheet">
+
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
+
+    <style global lang="scss">
+		@import "../styles/app.scss";
+	</style>
+
+	<script src="https://www.siliconhill.cz//linker/mainpage.js"></script>
+</head>
+<body>
+    <slot></slot>
+
+    <Footer></Footer>
+</body>
+</html>

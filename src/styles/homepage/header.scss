@@ -1,0 +1,420 @@
+.hp-header {
+  min-height: 80px;
+  max-height: 1080px;
+  padding: 0 !important;
+  position: relative;
+  background: url('/assets/neonbrand-1-aA2Fadydc-unsplash.jpg');
+  background-size: cover;
+  z-index: 9999;
+
+  &:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4));
+  }
+
+  .img--bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+  }
+
+  .header__nav {
+    border-bottom: 1px solid rgba(255, 255, 255, .2);
+    position: fixed;
+    top: 26px;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+
+    &.nav--bg {
+      background: rgba(255, 255, 255, .98);
+      border-bottom: 1px solid $color-bright;
+      transition: all .1s;
+
+      .nav__item {
+
+        a {
+          color: $color-black !important;
+        }
+      }
+
+      .btn--text {
+        color: $color-black !important;
+      }
+
+      .logo__dark {
+        display: block;
+      }
+
+      .logo__white {
+        display: none;
+      }
+
+      .social-icons {
+
+        &.white {
+          display: none !important;
+        }
+
+        &.dark {
+          display: flex !important;
+        }
+      }
+
+      .account {
+
+        .nav__account-btn, .nav__logout-btn {
+
+          svg {
+            fill: $color-black !important;
+          }
+        }
+
+        .nav__account-btn {
+          border-right-color: $color-black !important;
+          color: $color-black !important;
+        }
+      }
+    }
+
+    .btn--text {
+      color: $color-white;
+    }
+
+    .logo__dark {
+      display: none;
+    }
+
+    .logo__white {
+      display: block;
+    }
+
+    .social-icons {
+
+      &.white {
+        display: flex !important;
+      }
+
+      &.dark {
+        display: none !important;
+      }
+    }
+
+    .header__nav__inner {
+      display: flex;
+      justify-content: space-between;
+      height: 80px;
+      padding: 0;
+
+      .nav__column {
+
+        .nav__list {
+          list-style: none;
+          margin: 0;
+          padding: 0;
+          display: flex;
+
+          .nav__item {
+            display: flex;
+
+            a {
+              height: 100%;
+              font-weight: 700;
+              font-size: 1.6rem;
+              padding: 0 2rem;
+              color: $color-white;
+              text-transform: uppercase;
+              text-decoration: none;
+              display: flex;
+              align-items: center;
+
+              &:hover {
+                text-decoration: none;
+              }
+            }
+          }
+        }
+
+        &.logo {
+          padding: 2rem 0;
+
+          img {
+            height: 100%;
+          }
+        }
+
+        &.navbar {
+          display: flex;
+          align-items: center;
+
+          .nav__list {
+            height: 100%;
+
+            .nav__item {
+
+              &:hover {
+                box-shadow: inset 0 -4px 0 $color-secondary;
+              }
+            }
+          }
+        }
+
+        &.account {
+          display: flex;
+          align-items: center;
+          justify-content: flex-end;
+          position: relative;
+          //width: 160px;
+
+          .btn--nav {
+            font-size: 1.3rem;
+            padding: 1rem 2rem;
+          }
+
+          .nav__account-btn {
+            font-size: 1.2rem;
+            color: $color-white;
+            margin-right: 2rem;
+            padding-right: 2rem;
+            display: flex;
+            align-items: center;
+            font-weight: 600;
+            height: 100%;
+            position: relative;
+
+            &:after {
+              content: '';
+              width: 1px;
+              height: 16px;
+              position: absolute;
+              left: 100%;
+              top: calc(50% - 8px);
+              background: $color-white;
+            }
+
+            svg {
+              fill: $color-white;;
+              height: 16px;
+              margin-right: 1rem;
+            }
+          }
+
+          .nav__logout-btn {
+            display: flex;
+
+            svg {
+              fill: $color-white;;
+              height: 16px;
+            }
+          }
+        }
+
+        /*&.social {
+
+            display: flex;
+            align-items: center;
+
+            .social-icons {
+                display: flex;
+
+                .social__icon {
+                    margin-right: 1rem;
+
+                    img {
+                        width: 30px;
+                    }
+
+                    &:last-of-type {
+                        margin-right: 0;
+                    }
+                }
+            }
+        }*/
+      }
+    }
+
+
+  }
+
+  .header__content {
+    width: 80%;
+    height: 100vh;
+    max-height: calc(1080px - 100px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: $color-white;
+    padding-top: 81px;
+
+    h1 {
+      position: relative;
+      margin-bottom: 7rem;
+      width: 100%;
+      font-size: 4.8rem;
+
+      &:after {
+        content: '';
+        height: 34px;
+        width: 34px;
+        border-radius: 50%;
+        background: $color-secondary;
+        position: absolute;
+        left: 0;
+        bottom: -5rem;
+      }
+    }
+
+    p {
+      font-size: 1.8rem;
+      margin-bottom: 6rem;
+      width: 70%;
+    }
+
+    a {
+      align-self: flex-start;
+    }
+  }
+
+
+}
+
+@media (max-width: 768px) {
+
+  .hp-header {
+    margin-bottom: 0;
+
+    .header__nav {
+
+      &.nav--bg {
+
+        .navbar {
+          background: $color-light !important;
+          border-bottom: 1px solid $color-bright;
+        }
+      }
+
+      .header__nav__inner {
+        height: 60px;
+        padding: 1rem 0;
+
+
+        .nav__column {
+
+          .nav__list {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+
+            .nav__item {
+
+              a {
+                font-weight: 700;
+                font-size: 1.4rem;
+                padding: 0 1rem;
+                color: $color-white;
+                text-transform: uppercase;
+                text-decoration: none;
+
+                &:hover {
+                  text-decoration: none;
+                }
+              }
+            }
+          }
+
+          &.logo {
+            padding: .5rem 0;
+            width: 150px;
+
+            img {
+              height: 100%;
+            }
+          }
+
+          &.navbar {
+            display: flex;
+            align-items: center;
+            margin-right: 0;
+            position: absolute;
+            top: 60px;
+            left: 0;
+            width: 100%;
+            background: transparent;
+            border-bottom: 1px solid rgba(255, 255, 255, .2);
+            transition: all .1s;
+
+            .nav__list {
+              width: 100%;
+              justify-content: space-between;
+              padding: 0 1rem;
+
+              li {
+                padding: 1rem 0;
+              }
+            }
+          }
+
+          &.social {
+
+            display: flex;
+            align-items: center;
+
+            .social-icons {
+              display: flex;
+
+              .social__icon {
+                margin-right: 1rem;
+
+                &:last-of-type {
+                  margin-right: 0;
+                }
+              }
+            }
+          }
+        }
+      }
+
+
+    }
+
+    .header__content {
+      width: 100%;
+      height: 85vh;
+
+      h1 {
+        margin-bottom: 5rem;
+        width: 100%;
+        font-size: 3rem;
+
+        &:after {
+          height: 24px;
+          width: 24px;
+          left: 0;
+          bottom: -4rem;
+        }
+      }
+
+      p {
+        font-size: 1.6rem;
+        line-height: 2.4rem;
+        margin-bottom: 3rem;
+      }
+    }
+
+
+  }
+}

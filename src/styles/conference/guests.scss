@@ -1,0 +1,136 @@
+
+.lecturers-list {
+  display: flex;
+  flex-wrap: wrap;
+
+  .lecturer__item {
+    margin-right: 3rem;
+    margin-bottom: 8rem;
+    display: flex;
+    align-items: center;
+
+    &.full {
+      flex-basis: 100%;
+    }
+
+    &:nth-of-type(2n) {
+      margin-right: 0;
+    }
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+
+    &:nth-last-child(2) {
+      margin-bottom: 0;
+    }
+
+    .lecturer__img {
+      flex-shrink: 0;
+      width: 180px;
+      height: 180px;
+      position: relative;
+      margin-right: 3rem;
+
+      .lecturer__position {
+        position: absolute;
+        left: 10px;
+        bottom: 20px;
+        width: calc(100% - 20px);
+        padding: 8px 4px;
+        border-radius: 4px;
+        color: $color-white;
+        text-align: center;
+        font-size: 1.6rem;
+        font-weight: 700;
+        z-index: 1;
+
+        &.primary {
+          background: $color-primary;
+        }
+
+        &.secondary {
+          background: $color-secondary;
+        }
+
+        &.tertiary {
+          background: $color-tertiary;
+        }
+
+        &.secret {
+          background: $color-black;
+        }
+      }
+
+      img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 50%;
+
+      }
+    }
+
+    .lecturer__details {
+
+      h3 {
+        text-align: inherit;
+        font-size: 1.7rem;
+        margin-bottom: 0;
+      }
+
+      h4 {
+        font-size: 1.6rem;
+        font-weight: 600;
+      }
+
+      p {
+        margin-top: 3rem;
+        font-size: 1.4rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+
+  .lecturers-list {
+
+    .lecturer__item {
+      flex-basis: 100%;
+      margin-right: 0;
+      margin-bottom: 5rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .lecturer__img {
+        margin-bottom: 3rem;
+        margin-right: 0;
+      }
+
+      .lecturer__details {
+        text-align: center !important;
+
+        h3, h4 {
+          font-size: 1.4rem;
+        }
+
+        h4 {
+          margin-bottom: 2rem;
+        }
+
+        p {
+          font-size: 1.4rem;
+          width: 100%;
+        }
+      }
+    }
+  }
+}

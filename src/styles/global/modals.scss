@@ -1,0 +1,248 @@
+@import "variables";
+
+.backdrop {
+  position: fixed;
+  z-index: 11;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  animation: modal-backdrop-animation .5s;
+  animation-fill-mode: forwards;
+  background: rgba(0, 0, 0, .4);
+
+    &.closing {
+        opacity: 1;
+        animation: modal-backdrop-closing-animation .5s;
+        animation-fill-mode: forwards;
+        animation-delay: .5s;
+
+    }
+}
+
+.modal {
+  position: fixed;
+  //overflow: hidden;
+  top: 50px;
+  background: $color-white;
+  border-radius: 10px;
+  z-index: 13;
+  box-shadow: 5px 5px 50px rgba(0, 0, 0, .1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  opacity: 0;
+  animation: modal-content-animation .5s;
+  animation-fill-mode: forwards;
+  animation-delay: .15s;
+  color: $color-gray;
+  overflow: auto;
+  max-height: calc(100vh - 100px);
+
+    &.closing {
+        animation: modal-content-closing-animation .5s;
+        animation-fill-mode: forwards;
+        animation-delay: .15s;
+    }
+
+  h4 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: $color-gray;
+    position: relative;
+
+    &.h--i {
+      padding-left: 60px;
+
+      i {
+        font-size: 4rem;
+        position: absolute;
+        left: 0;
+        top: -8px;
+      }
+
+    }
+
+
+  }
+
+  h5 {
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: $color-light-gray;
+  }
+
+  p {
+    font-size: 1.4rem;
+    color: $color-gray;
+    margin-bottom: 6px;
+
+    &.p--i {
+      padding-left: 60px;
+    }
+
+    &:last-of-type, &:only-of-type {
+      margin-bottom: 0;
+    }
+
+    a {
+      color: $color-gray;
+      font-weight: 600;
+      text-decoration: underline;
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+
+  &.modal--m {
+    width: 550px;
+    left: calc(50% - 275px);
+  }
+
+  &.modal--l {
+    width: 780px;
+    left: calc(50% - 390px);
+  }
+
+  .modal__header {
+    padding: 2.5rem;
+
+    .modal__close {
+      position: absolute;
+      top: 20px;
+      right: 1.5rem;
+      background: $color-light;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+
+      i {
+        color: $color-gray;
+        font-size: 1.6rem;
+
+      }
+    }
+  }
+
+  .modal__body {
+
+    .modal__left {
+      padding: 2rem;
+    }
+
+    .modal__right {
+      padding: 2rem;
+    }
+
+    .modal__full {
+      padding: 2.5rem;
+
+      &.gray {
+        background: $color-light;
+      }
+    }
+
+    .modal-cart {
+      border-right: 0;
+      border-left: 0;
+      margin-right: -2.5rem;
+      margin-left: -2.5rem;
+
+      .cart__row {
+        display: flex;
+        justify-content: space-between;
+        padding: 1rem 2.5rem;
+        border-bottom: 1px solid $color-bright;
+
+        &:last-of-type {
+          border-bottom: none;
+        }
+
+        &:first-of-type {
+          border-top: 1px solid $color-bright;
+        }
+
+        .cart__column {
+
+          &.price {
+            display: flex;
+            align-items: center;
+          }
+
+          .cart__name {
+            font-size: 1.2rem;
+            font-weight: 600;
+          }
+
+          .cart__email {
+            font-size: 1.1rem;
+          }
+
+          .cart__price {
+            font-size: 1.6rem;
+            font-weight: 600;
+          }
+        }
+
+      }
+    }
+  }
+
+  .modal__footer {
+    padding: 2rem 2.5rem;
+    background: $color-white;
+    border-radius: 0 0 10px 10px;
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+
+@keyframes modal-backdrop-animation {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes modal-backdrop-closing-animation {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes modal-content-animation {
+  0% {
+    opacity: 0;
+    top: 0
+  }
+
+  100% {
+    opacity: 1;
+    top: 50px;
+  }
+}
+
+@keyframes modal-content-closing-animation {
+    0% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+}

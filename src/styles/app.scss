@@ -1,0 +1,51 @@
+div#sh_linker{
+    background: white;
+    position: fixed !important; 
+    top: 0; 
+    left: 0;
+}
+
+body{
+    background: red;
+}
+
+@import "global/variables";
+@import "global/alerts";
+@import "global/cookiebot";
+@import "global/global";
+@import "global/btns";
+@import "global/footer";
+@import "global/sections";
+@import "global/about";
+@import "global/courses";
+@import "global/forms";
+@import "global/modifiers";
+@import "global/block";
+@import "global/header";
+@import "global/loader";
+@import "global/quick-login";
+@import "global/register-steps";
+@import "global/labels";
+
+
+@import "homepage/header";
+@import "homepage/reviews";
+@import "homepage/featured";
+
+@import "screens/articles";
+@import "screens/category";
+@import "screens/error";
+@import "screens/teaser";
+
+@import "conference/guests";
+@import "conference/sponsors";
+@import "conference/pricelist";
+@import "conference/program";
+@import "conference/register";
+@import "conference/map";
+@import "conference/contact";
+@import "conference/header";
+@import "conference/faq";
+@import "conference/organizator";
+// @import "conference/accomodation";
+// @import "conference/map-marker";

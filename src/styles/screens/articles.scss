@@ -1,0 +1,353 @@
+.article {
+
+  .article__column {
+    display: flex;
+
+    .article__left {
+      //width: 65%;
+      width: 100%;
+    }
+
+    .article__right {
+      width: 35%;
+    }
+  }
+
+  .article-tags {
+    display: flex;
+    margin-bottom: 4rem;
+
+    .tag__item {
+      margin-right: 2rem;
+      position: relative;
+      font-size: 1.4rem;
+      padding-left: 2rem;
+
+      &:before {
+        content: '';
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background: $color-secondary;
+        position: absolute;
+        left: 0;
+        top: 5px;
+      }
+
+      a {
+        color: $color-black;
+      }
+
+
+      &:last-of-type {
+        margin-right: 0;
+      }
+    }
+  }
+
+  h2 {
+    text-transform: uppercase;
+    margin-bottom: 3rem;
+  }
+
+  .article__details {
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+    margin-bottom: 4rem;
+
+    .detail__item {
+      font-size: 1.1rem;
+      display: flex;
+
+      i {
+        font-size: 1.6em;
+        color: $color-light-gray;
+      }
+    }
+  }
+
+  .article__block {
+    margin-bottom: 3rem;
+
+    h2, h3, h4 {
+      text-align: left;
+    }
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+
+    &.img {
+
+      img {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+        overflow: hidden;
+      }
+    }
+
+    &.video {
+
+      .video__inner {
+        background: $color-light;
+        padding: 3rem;
+        border-radius: 10px;
+        overflow: hidden;
+
+        iframe {
+        }
+      }
+    }
+
+    &.text {
+
+      a {
+        font-weight: bold;
+        color: $color-primary;
+      }
+
+      p, li {
+        font-size: 1.8rem;
+        line-height: 3rem;
+        font-weight: 400;
+
+        &:last-of-type {
+          margin-bottom: 0;
+        }
+      }
+
+      h2 {
+        margin-top: 3rem;
+        margin-bottom: 1.5rem;
+      }
+
+      h3 {
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+      }
+
+      p {
+        margin-top: 1.6rem;
+
+        &:first-of-type {
+          margin-top: 0;
+        }
+      }
+
+      ul {
+        padding-left: 32px;
+        list-style: none;
+        margin-top: 1.6rem;
+
+        li {
+          position: relative;
+          margin-bottom: .6rem;
+
+          &:before {
+            content: '';
+            position: absolute;
+            left: -26px;
+            top: 8px;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background: $color-secondary;
+          }
+        }
+      }
+
+      ol {
+        padding-left: 32px;
+        margin-top: 1.6rem;
+        list-style: none;
+
+        li {
+          position: relative;
+          margin-bottom: .6rem;
+          counter-increment: li;
+
+          &:before {
+            content: counter(li);
+            color: $color-secondary;
+            font-weight: 700;
+            position: absolute;
+            right: calc(100% + 14px);
+            top: 0;
+            font-size: 16px;
+          }
+
+          &:after {
+            content: '/.';
+            color: $color-secondary;
+            font-weight: 700;
+            position: absolute;
+            right: calc(100% + 5px);
+            top: 0;
+            font-size: 13px;
+          }
+        }
+      }
+
+      blockquote {
+        margin: 4rem 0 4rem 0;
+        background: $color-light;
+        border-radius: 0 5px 5px 0;
+        border-left: 5px solid $color-primary;
+        padding: 2rem 2rem 2rem 8rem;
+        font-size: 1.8rem;
+        line-height: 3rem;
+        font-weight: 400;
+        font-style: italic;
+        position: relative;
+
+        &:before {
+          content: '§';
+          color: $color-primary;
+          position: absolute;
+          left: 30px;
+          top: 25px;
+          font-size: 4rem;
+          font-weight: 600;
+        }
+      }
+    }
+
+    &.links {
+
+      h3 {
+        margin-bottom: 1rem;
+      }
+
+      ul {
+        padding-left: 32px;
+        list-style: none;
+        margin-top: 1.6rem;
+
+        li {
+          position: relative;
+          margin-bottom: .4rem;
+          font-size: 1.6rem;
+          line-height: 2.2rem;
+          font-style: italic;
+
+          &:before {
+            content: '';
+            position: absolute;
+            left: -26px;
+            top: 8px;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background: $color-primary;
+          }
+
+          a {
+            font-weight: 600;
+            color: $color-primary;
+          }
+        }
+      }
+
+    }
+
+    &.heading {
+
+      h3 {
+        margin-bottom: 2rem;
+      }
+    }
+  }
+
+  .article__share {
+    display: flex;
+    margin-bottom: 4rem;
+
+    .share__btn {
+      display: flex;
+      align-items: center;
+      margin-right: 2rem;
+      background: $color-bright;
+      color: $color-gray;
+      font-weight: 600;
+      font-size: 1rem;
+      padding: .8rem 4rem;
+      border-radius: 5px;
+
+      &:last-of-type {
+        margin-right: 0;
+      }
+
+      &.facebook {
+
+      }
+
+      &.twitter {
+
+      }
+
+      &.linekdin {
+
+      }
+    }
+  }
+
+  .article__authors {
+    padding-top: 3rem;
+    margin-top: 3rem;
+    border-top: 1px solid $color-light;
+  }
+
+  .article__author {
+    display: flex;
+    align-items: center;
+    margin-bottom: 4rem;
+
+    &:last-of-type, &:only-of-type {
+      margin-bottom: 0;
+    }
+
+    .author__img {
+      flex-shrink: 0;
+      width: 120px;
+      height: 120px;
+      position: relative;
+      margin-right: 3rem;
+
+      img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 50%;
+
+      }
+    }
+
+    .author__details {
+
+      h3 {
+        font-size: 1.7rem;
+        text-align: left;
+        margin-bottom: 0;
+      }
+
+      h4 {
+        font-size: 1.6rem;
+        font-weight: 400;
+        margin-bottom: 0;
+      }
+
+      p {
+        margin-top: 1.8rem;
+        font-size: 1.4rem;
+      }
+    }
+  }
+}

@@ -1,0 +1,13 @@
+.organizator-container {
+    margin-left: 10rem;
+    margin-bottom: 4rem;
+
+    p {
+        font-size: 1.6rem;
+        margin-bottom: 2rem;
+
+        &:last-of-type {
+            margin-bottom: 0;
+        }
+    }
+}

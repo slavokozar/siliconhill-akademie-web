@@ -1,0 +1,38 @@
+---
+
+const {className} = Astro.props;
+
+---
+
+<div class="header__nav nav--bg">
+    <div class="wrapper">
+        <div class="header__nav__inner">
+            <div class="nav__group d--flex">
+                <div class="nav__column logo">
+                    <a href="/">
+                        Akademie SiliconHill.cz
+                    </a>
+                </div>
+            </div>
+
+            <div class="nav__group d--flex">
+                <div class="nav__column navbar">
+                    <ul class="nav__list">
+                        <li class="nav__item active">
+                            <a href="/">O akademii</a>
+                        </li>
+
+                        <li class="nav__item ">
+                            <a href="/kurzy">Kurzy</a>
+                        </li>
+
+                        <li class="nav__item ">
+                            <a href="/kontakt">Kontakt</a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

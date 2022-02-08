@@ -1,0 +1,200 @@
+.btn---desc {
+  font-size: 1.2rem;
+  font-style: italic;
+  margin-top: 1rem;
+  display: inline-block;
+}
+
+.btn, button {
+  font-weight: 600;
+  border-radius: 4px;
+  text-decoration: none;
+  display: inline-block;
+  font-family: $font-primary;
+  border: none;
+  cursor: pointer;
+  position: relative;
+
+  &:focus {
+    border: none;
+    outline: none;
+    box-shadow: none;
+  }
+
+  &.btn--circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+
+    &.s {
+      width: 20px;
+      height: 20px;
+    }
+  }
+
+  &.btn--primary {
+    background: $color-primary;
+    color: $color-white !important;
+    transition: all .2s;
+
+    &:hover {
+      background: $color-secondary;
+    }
+  }
+
+  &.btn--secondary {
+    background: $color-secondary;
+    color: $color-white;
+    transition: all .2s;
+
+    &:hover {
+      background: darken($color-secondary, 5%);
+    }
+  }
+
+  &.btn--white {
+    color: $color-gray;
+    background: $color-white;
+    transition: all .2s;
+
+    &:hover {
+      background: darken($color-white, 3%);
+    }
+  }
+
+  &.btn--success {
+    color: $color-white;
+    background: $color-success;
+    transition: all .2s;
+
+    &:hover {
+      background: darken($color-success, 3%);
+    }
+  }
+
+  &.btn--success-inv {
+    background: $color-success-light;
+    color: $color-success-dark;
+    transition: all .2s;
+
+    &:hover {
+      background: darken($color-success-light, 3%);
+    }
+  }
+
+  &.btn--danger {
+    color: $color-white;
+    background: $color-danger;
+    transition: all .2s;
+
+    &:hover {
+      background: darken($color-danger, 3%);
+    }
+  }
+
+  &.btn--danger-inv {
+    background: $color-danger-light;
+    color: $color-danger-dark;
+    transition: all .2s;
+
+    &:hover {
+      background: darken($color-danger-light, 3%);
+    }
+  }
+
+  &.btn--shadow {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, .1);
+  }
+
+  &.btn--text {
+    background: transparent;
+    color: $color-black;
+    //font-weight: 400;
+
+    &:hover {
+      text-decoration: underline;
+    }
+
+    &.gray {
+      color: $color-gray;
+    }
+
+    &.primary {
+      color: $color-primary;
+    }
+
+    &.danger {
+      color: $color-danger;
+    }
+
+    &.p--0 {
+      padding: 0;
+    }
+
+    &.xs {
+      font-size: 1.2rem;
+    }
+  }
+
+  &.btn--l {
+    font-size: 2.2rem;
+    padding: 1.6rem 4rem;
+  }
+
+  &.btn--s {
+    font-size: 1.6rem;
+    padding: 1.4rem 3.6rem;
+  }
+
+  &.btn--xs {
+    font-size: 1.3rem;
+    padding: .8rem 1rem;
+    text-align: center;
+
+    &.fixed {
+      width: 130px;
+    }
+  }
+
+  &.btn--more {
+    height: 32px;
+    width: 32px;
+    font-size: 2rem;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &.btn--conferences {
+    height: 40px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 2rem;
+    bottom: 2rem;
+
+    img {
+      margin: 0 !important;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+
+  .btn {
+
+    &.btn--l {
+      font-size: 2rem;
+      padding: 1rem 3rem;
+    }
+
+    &.btn--s {
+      font-size: 1.6rem;
+      padding: 1.2rem 3rem;
+    }
+  }
+}
