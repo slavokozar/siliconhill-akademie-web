@@ -97,6 +97,17 @@
         &.logo {
           padding: 2rem 0;
 
+          a {
+            height: 100%;
+            font-weight: 700;
+            font-size: 1.6rem;
+            padding: 0 2rem;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            color: #000;
+          }
+
           img {
             height: 100%;
           }

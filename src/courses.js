@@ -1,6 +1,6 @@
 export const courses = [
     {
-        name:'React od začátku',
+        name:'React pro začátečníky',
         desc: 'Kurz je vhodný jak pro úplné začátečníky, tak i pro zkušené programátory, kteří chtějí poznat knihovnu React a využít ji pro vytvoření dynamické webové aplikace.',
         url: 'kurz-react',
         img: 'kurz-react.jpg',

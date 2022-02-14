@@ -1,0 +1,37 @@
+<a class="course__item" href={Astro.props.kurz.url}>
+    <div class="course__img">
+        <img src={`/img/${Astro.props.kurz.img}`} alt={Astro.props.kurz.name}>
+            {
+                Astro.props.kurz.type !== null && (
+                    <div class="course__type">
+                        <span>{Astro.props.kurz.type}</span>
+                    </div>
+                )
+            }
+    </div>
+
+    <div class="course__location">
+        <div class="course__top-left">
+            <i class="fad fa-calendar-alt"></i>
+            <p class="course__date">{Astro.props.kurz.start}</p>
+        </div>
+
+        <div class="course__top-right">
+            <i class="fad fa-map-marker-alt"></i>
+            <p class="course__city">{Astro.props.kurz.place}</p>
+        </div>
+    </div>
+
+    <div class="course__name">
+        <h3>{Astro.props.kurz.name}</h3>
+    </div>
+
+    <div class="course__desc">
+        <p>{Astro.props.kurz.desc}</p>
+    </div>
+
+    <div class="course__more">
+        <span>Prejsť na podujatie</span>
+        <img src="https://eduveo.e-zone.sk/img/conference/long-arrow-right.svg" alt="">
+    </div>
+</a>

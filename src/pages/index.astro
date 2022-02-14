@@ -2,6 +2,7 @@
 
 import Wrapper from '../layouts/Wrapper.astro';
 import Navigation from '../components/HeaderNav.astro';
+import KurzKarta from '../components/KurzKarta.astro';
 
 import {homepageCourses} from '../courses.js';
 
@@ -33,43 +34,7 @@ import {homepageCourses} from '../courses.js';
 
                 {
                     homepageCourses.map((course) => (
-                        <a class="course__item" href={course.url}>
-                            <div class="course__img">
-                                <img src={`/img/${course.img}`} alt={course.name}>
-                                {
-                                    course.type !== null && (
-                                        <div class="course__type">
-                                            <span>{course.type}</span>
-                                        </div>
-                                    )
-                                }
-                            </div>
-
-                            <div class="course__location">
-                                <div class="course__top-left">
-                                    <i class="fad fa-calendar-alt"></i>
-                                    <p class="course__date">{course.start}</p>
-                                </div>
-
-                                <div class="course__top-right">
-                                    <i class="fad fa-map-marker-alt"></i>
-                                    <p class="course__city">{course.place}</p>
-                                </div>
-                            </div>
-
-                            <div class="course__name">
-                                <h3>{course.name}</h3>
-                            </div>
-
-                            <div class="course__desc">
-                                <p>{course.desc}</p>
-                            </div>
-
-                            <div class="course__more">
-                                <span>Prejsť na podujatie</span>
-                                <img src="https://eduveo.e-zone.sk/img/conference/long-arrow-right.svg" alt="">
-                            </div>
-                        </a>
+						<KurzKarta kurz={course}/>
                     ))
                 }
             </div>
@@ -110,7 +75,7 @@ import {homepageCourses} from '../courses.js';
                 </div>
 
                 <div class="featured__content">
-                    <h2>Vzďelávání v klubu SiliconHill</h2>
+                    <h2>Vzdělávání v klubu SiliconHill</h2>
                     <p></p>
 
                     <div class="featured__content__icon">
@@ -121,15 +86,12 @@ import {homepageCourses} from '../courses.js';
         </div>
     </section>
 
-
+<!--
 	<section class="white hp-about">
-
         <div class="wrapper">
-
             <h3>Skúsenosti našich lektorov hovoria za všetko</h3>
 
             <div class="about__featured">
-
                 <div class="about__featured-item">
                     <h3>20</h3>
                     <p>Úspešných konferencií a seminárov</p>
@@ -149,25 +111,21 @@ import {homepageCourses} from '../courses.js';
                     <h3>9</h3>
                     <p>kreatívnych konceptov </p>
                 </div>
-
             </div>
-
         </div>
-
     </section>
+-->
 
+<!--
     <section class="white reviews">
         <div class="wrapper">
-
             <h2>Povedali o nás</h2>
 
             <div class="reviews-list owl-carousel owl-theme">
-
                 <div class="reviews__item">
                     <p class="reviews__text">V rámci Košického samosprávneho kraja boli realizované viaceré školenia pre
                         organizácie v našej zriaďovateľskej pôsobnosti. Školenia hodnotíme vysoko pozitívne a to
                         predovšetkým za odbornosť a profesionálny prístup.</p>
-
                     <h3 class="reviews__author">Ing. Marcel Kyseľ, Košický samosprávny kraj</h3>
                 </div>
 
@@ -177,7 +135,6 @@ import {homepageCourses} from '../courses.js';
                         veľmi spokojní a získané poznatky už aj viem zužitkovávať v praxi. Lektor bol človek na správnom
                         mieste, veľmi dobre mal zvládnuté poznatky z praxe, odbornú prípravu a aj prezentačné
                         schopnosti.</p>
-
                     <h3 class="reviews__author">JUDr. Mária Beňová, Mesto Topoľčany</h3>
                 </div>
 
@@ -185,16 +142,11 @@ import {homepageCourses} from '../courses.js';
                     <p class="reviews__text">Vysoko hodnotíme prístup školiteľa JUDr. Petra Kuboviča, jeho zrozumiteľný
                         výklad podstatných častí zákona o verejnom obstarávaní, ukážku praktických príkladov
                         obstarávania zákaziek a jeho skúsenosti zo samosprávy.</p>
-
                     <h3 class="reviews__author">Ing. Eva Granátová, Mesto Dubnica nad Váhom</h3>
                 </div>
-
-
             </div>
-
         </div>
-
-
     </section>
+-->
 </Wrapper>
 

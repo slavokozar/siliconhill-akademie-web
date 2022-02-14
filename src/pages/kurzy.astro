@@ -1,88 +1,28 @@
+
+
 ---
 // Component Imports
 import MainLayout from '../layouts/Main.astro';
-// import Tour from '../components/Tour.astro';
-// You can import components from any supported Framework here!
+import KurzKarta from "../components/KurzKarta.astro";
 
-
-// Component Script:
-// You can write any JavaScript/TypeScript that you'd like here.
-// It will run during the build, but never in the browser.
-// All variables are available to use in the HTML template below.
-// let title = 'My Astro Site';
-
-// Full Astro Component Syntax:
-// https://docs.astro.build/core-concepts/astro-components/
+import {courses} from "../courses";
 ---
 
 <MainLayout>
     <section id="courses" class="light courses">
-
         <div class="wrapper">
 
-            <h2 class="text--center dot dot--bottom dot--secondary">Najbližšie konferencie</h2>
+            <h2 class="text--center dot dot--bottom dot--secondary">Kurzy pro letní semestr 2021/2022</h2>
 
 
             <div id="conferences-list">
-                <div id="registration-loader" style="margin: 5rem auto">Nahrávam</div>
                 <div class="courses-list">
-
-                                                    <a class="course__item"
-                               href="https://eduveo.sk/konferencie/maraton-verejneho-obstaravania-2022">
-
-                                <div class="course__img">
-
-                                    <img
-                                        src="https://eduveo.sk/storage/conferences/maraton20227340.jpg"
-                                        alt="">
-
-                                    <div class="course__type">
-                                        <span>Konferencia</span>
-                                    </div>
-                                </div>
-
-                                <div class="course__location">
-
-                                    <div class="course__top-left">
-                                        <i class="fad fa-calendar-alt"></i>
-                                        <p class="course__date">03. - 04.5. 2022</p>
-                                    </div>
-
-                                    <div class="course__top-right">
-                                        <i class="fad fa-map-marker-alt"></i>
-                                        <p class="course__city">Podbanské</p>
-                                    </div>
-                                </div>
-
-                                <div class="course__name">
-                                    <h3>MARATÓN VEREJNÉHO OBSTARÁVANIA 2022</h3>
-                                </div>
-
-                                <div class="course-prices">
-                                                                            <div class="course__price">
-                                            <div class="price__type">Osobná účasť</div>
-                                            <h4>
-                                                240,00
-                                                <span class="euro">€</span>
-                                                                                            </h4>
-                                        </div>
-                                                                            <div class="course__price">
-                                            <div class="price__type">Osobná účasť + video záznam z celej konferencie</div>
-                                            <h4>
-                                                290,00
-                                                <span class="euro">€</span>
-                                                                                            </h4>
-                                        </div>
-                                                                    </div>
-
-
-                                <div class="course__more">
-                                    <span>Prejsť na podujatie</span>
-                                    <img src=https://eduveo.sk/img/conference/long-arrow-right.svg alt="">
-                                </div>
-
-                            </a>
-                                                            </div>
+                    {
+                        courses.map((course) => (
+                            <KurzKarta kurz={course}/>
+                        ))
+                    }
+                </div>
             </div>
         </div>
 
