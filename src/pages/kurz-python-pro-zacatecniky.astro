@@ -1,7 +1,9 @@
 ---
 
+import { Markdown } from 'astro/components';
 import KurzLayout from '../layouts/Kurz.astro';
 import MapaSkolici from '../components/MapaSkolici.astro';
+
 
 const program = [
     {
@@ -43,57 +45,57 @@ const program = [
 
 ---
 <KurzLayout>
-    <header class="header o--h" style="z-index: 10">
-        <div class="header__nav">
-            <div class="wrapper">
-                <div class="header__nav__inner">
-                    <div class="nav__group d--flex">
-                        <div class="nav__column logo">
-                            <a href="/">
-                                Akademie
+    <header id="uvod" className="header o--h" style="z-index: 10">
+        <div className="header__nav">
+            <div className="wrapper">
+                <div className="header__nav__inner">
+                    <div className="nav__group d--flex">
+                        <div className="nav__column logo">
+                            <a href="#uvod">
+                                Python pro začátečníky
                             </a>
                         </div>
 
-                        <div class="nav__column back">
-                            <ul class="nav__list">
-                                <li class="nav__item">
+                        <div className="nav__column back">
+                            <ul className="nav__list">
+                                <li className="nav__item">
                                     <a href="/kurzy">
                                         <img src="/assets/icons/back-icon.svg" alt="">
-                                        <p>Späť <span class="sm:d--none">na kurzy</span></p></a>
+                                            <p>Spět <span className="sm:d--none">na kurzy</span></p></a>
                                 </li>
                             </ul>
                         </div>
                     </div>
 
 
-                    <div class="nav__group d--flex">
+                    <div className="nav__group d--flex">
 
-                        <div class="nav__column navbar">
+                        <div className="nav__column navbar">
 
-                            <ul class="nav__list">
-                                <li class="nav__item">
-                                    <a href="#hostia">Hostia</a>
+                            <ul className="nav__list">
+                                <li className="nav__item">
+                                    <a href="#o-kurzu">O kurzu</a>
                                 </li>
 
-                                <li class="nav__item">
+                                <li className="nav__item">
                                     <a href="#program">Program</a>
                                 </li>
 
-                                <li class="nav__item">
+                                <li className="nav__item">
                                     <a href="#registracia">Registrácia</a>
                                 </li>
-
                             </ul>
                         </div>
 
-                        <div class="nav__column social">
-                            <div class="social-icons">
+                        <div className="nav__column social">
+                            <div className="social-icons">
 
-                                <a href="https://www.facebook.com/eduveo.sk/" class="social__icon" target="_blank">
+                                <a href="https://www.facebook.com/eduveo.sk/" className="social__icon" target="_blank">
                                     <img src="https://eduveo.e-zone.sk/img/social/facebook-dark.svg" alt="">
                                 </a>
 
-                                <a href="https://www.youtube.com/channel/UCJmFqvIdBcxfMol7nvurl1Q" class="social__icon"
+                                <a href="https://www.youtube.com/channel/UCJmFqvIdBcxfMol7nvurl1Q"
+                                   className="social__icon"
                                    target="_blank"><img src="https://eduveo.e-zone.sk/img/social/youtube-dark.svg"
                                                         alt=""></a>
 
@@ -105,29 +107,29 @@ const program = [
             </div>
         </div>
 
-        <div class="wrapper">
+        <div className="wrapper">
 
-            <div class="header__content">
+            <div className="header__content">
 
-                <div class="header-tags-list">
-                    <span class="header-tags__item">dlouhodobý kurz</span>
+                <div className="header-tags-list">
+                    <span className="header-tags__item">dlouhodobý kurz</span>
                 </div>
 
-                <h1>React pro začátečníky</h1>
+                <h1>Pandas - Zpracování dat v jazyce Python</h1>
 
-                <p class="header__date">2. březen 2022</p>
-                <p class="header__place">Školíci centrum</p>
-                
+                <p className="header__date">2. březen 2022</p>
+                <p className="header__place">Školíci centrum</p>
 
-                <a href="#registracia" class="btn btn--primary btn--l">Chci se registrovat</a>
 
-                <a href="#about" class="header-read__more">
+                <a href="#registracia" className="btn btn--primary btn--l">Chci se registrovat</a>
+
+                <a href="#about" className="header-read__more">
                     <img src="/assets/icons/header-more.svg" alt="">
-                    <p>Více informací</p>
+                        <p>Více informací</p>
                 </a>
             </div>
 
-            <div class="header-img--bg">
+            <div className="header-img--bg">
                 <img src="/img/kurz-react-logo.png" alt="">
             </div>
 
@@ -177,10 +179,13 @@ const program = [
                 </div>
             
             <div class="about__desc">
-                <!-- <p><strong style="color: rgb(119, 125, 138);">Najobľubenejšie podujatie</strong><span style="color: rgb(119, 125, 138);"> v oblasti verejného obstarávania už na jar!</span></p><p>Zoznam hostí a program pre Vás pripravujeme.</p> -->
-                <p>V tomto kurzu si představíme jazyk Python a projdeme úplné základy programování jako jsou proměnné, podmínky, cykly nebo funkce. Naším cílem bude napsání vlastní aplikace s textovým rozhraním. Celý kurz je koncipovaný na praktickou část, takže vždy probereme to nejnutnější z teorie a pak si vše hned prakticky vyzkoušíme. V průběhu výuky budou zadávány i jednoduché domácí úkoly na procvičení látky.</p>
-                <p>Kurz je vhodný jak pro úplné začátečníky, tak i pro zkušené programátory, kteří chtějí poznat Python.</p>
-                <p>Po dokončení tohoto kurzu bys měl být schopen samostatně psát aplikace a umět dohledávat a číst v dokumentaci.</p>
+                <Markdown>
+                    V tomto kurzu si představíme jazyk Python a projdeme úplné základy programování jako jsou proměnné, podmínky, cykly nebo funkce. Naším cílem bude napsání vlastní aplikace s textovým rozhraním. Celý kurz je koncipovaný na praktickou část, takže vždy probereme to nejnutnější z teorie a pak si vše hned prakticky vyzkoušíme. V průběhu výuky budou zadávány i jednoduché domácí úkoly na procvičení látky.
+
+                    Kurz je vhodný jak pro úplné začátečníky, tak i pro zkušené programátory, kteří chtějí poznat Python.
+
+                    Po dokončení tohoto kurzu bys měl být schopen samostatně psát aplikace a umět dohledávat a číst v dokumentaci.
+                </Markdown>
             </div>
         </div>
 
@@ -207,10 +212,13 @@ const program = [
                         </div>
 
                         <div class="lecturer__details">
-                            <h3>ing. Slavomír Kožár</h3>
-                            <h4>innovis s.r.o.</h4>
+                            <h3>Martin Skalický</h3>
 
-                            <p>Pracuje na Úrade pre verejné obstarávanie od roku 2006. Za toto obdobie sa zaoberal širokospektrálnou agendou, ako aj koncipovaním legislatívy vo verejnom obstarávaní, zastupovaním úradu v súdnych sporoch, výkonom dohľadu nad verejným obstarávaním a lektorskými aktivitami.</p>
+                            <Markdown>
+                                Jsem studentem Fakulty informačních technologií ČVUT, aktuálně na magisterském programu Webového inženýrství. Programování se věnuji již více jak šest let a z toho 2 roky pracovně. Ve volném čase, když zrovna naprogramuji, tak si hraji s elektrotechnikou - 3D tiskárnou, kvadrokoptérou či mikročipy.
+
+                                Baví mě předávat své vědomosti dál a pomáhat tak ostatním - neváhejte a přijďte se podívat na některým z mých kurzů.
+                            </Markdown>
                         </div>
 
                     </div>
@@ -322,6 +330,11 @@ const program = [
                     <p class="mb--s subheading">
                         V prípade akýchkoľvek otázok alebo nejasností nás neváhajte kontaktovať.
                     </p>
+
+                    <p class="mb--s subheading">
+                        <a href="mailto:slavo.kozar@gmail.com">slavo.kozar@gmail.com</a>
+                    </p>
+
                 </div>
 
 

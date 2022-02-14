@@ -20,6 +20,16 @@ export const courses = [
         homepage: true
     },
     {
+        name:'Pandas - Zpracování dat v jazyce Python',
+        desc: 'V kurzu si na začátek ukážeme základy Pythonu, ale prolétneme to velice rychle, takže pokud si zapíšete kurz Pythonu pro začátečníky, tak uděláte dobře.',
+        url: 'kurz-pandas-spracovani-dat-v-python',
+        img: 'kurz-python.jpg',
+        type: 'dlouhodobý kurz',
+        start: '2. 3. 2022',
+        place: 'Školíci centrum SH',
+        homepage: true
+    },
+    {
         name:'AutoCAD',
         desc: 'Kurz je určen začátečníkům, kteří se snaží pokořit AutoCad a donutit ho vygenerovat výkres, který tak pracně nakreslili. Během kurzu zpracujeme jednoduchý půdorys garáže, kde si ukážeme jak výkres začít, uložit a dokončit.',
         url: 'kurz-autocad',
