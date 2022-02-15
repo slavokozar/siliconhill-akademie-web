@@ -1,0 +1,337 @@
+---
+
+import { Markdown } from 'astro/components';
+import KurzLayout from '../layouts/Kurz.astro';
+import MapaSkolici from '../components/MapaSkolici.astro';
+
+
+const program = [
+    {
+        name: '1. Lekcia',
+        heading: 'Úvod do webu a Reactu',
+        text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
+    },
+    {
+        name: '2. Lekcia',
+        heading: 'State a Lifecycle React komponenty',
+        text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
+    },
+    {
+        name: '3. Lekcia',
+        heading: 'Formuláre',
+        text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
+    },
+    {
+        name: '4. Lekcia',
+        heading: 'Zoznamy a polia',
+        text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
+    },
+    {
+        name: '5. Lekcia',
+        heading: 'Zdieľanie stavu komponent',
+        text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
+    },
+    {
+        name: '6. Lekcia',
+        heading: 'Práca s API',
+        text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
+    },
+    {
+        name: '7. Lekcia',
+        heading: 'Komplexná správa stavu komponet',
+        text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
+    }
+]
+
+---
+<KurzLayout>
+    <header id="uvod" class="header o--h" style="z-index: 10">
+        <div class="header__nav">
+            <div class="wrapper">
+                <div class="header__nav__inner">
+                    <div class="nav__group d--flex">
+                        <div class="nav__column logo">
+                            <a href="#uvod">
+                                React pro začátečníky
+                            </a>
+                        </div>
+
+                        <div class="nav__column back">
+                            <ul class="nav__list">
+                                <li class="nav__item">
+                                    <a href="/kurzy">
+                                        <img src="/assets/icons/back-icon.svg" alt="">
+                                        <p>Spět <span class="sm:d--none">na kurzy</span></p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="nav__group d--flex">
+                        <div class="nav__column navbar">
+                            <ul class="nav__list">
+                                <li class="nav__item">
+                                    <a href="#o-kurzu">O kurzu</a>
+                                </li>
+
+                                <li class="nav__item">
+                                    <a href="#program">Program</a>
+                                </li>
+
+                                <li class="nav__item">
+                                    <a href="#registrace">Registrace</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="wrapper">
+
+            <div class="header__content">
+
+                <div class="header-tags-list">
+                    <span class="header-tags__item">dlouhodobý kurz</span>
+                </div>
+
+                <h1>React pro začátečníky</h1>
+
+                <p class="header__date">2. březen 2022</p>
+                <p class="header__place">Školíci centrum</p>
+
+
+                <a href="#registrace" class="btn btn--primary btn--l">Chci se registrovat</a>
+
+                <a href="#about" class="header-read__more">
+                    <img src="/assets/icons/header-more.svg" alt="">
+                        <p>Více informací</p>
+                </a>
+            </div>
+
+            <div class="header-img--bg">
+                <img src="/img/kurz-react-logo.png" alt="">
+            </div>
+
+        </div>
+    </header>
+
+
+    <section id="o-kurzu" class="white conf conf-about" style="z-index: 9">
+
+        <div class="wrapper line">
+
+            <h2 class="dot dot--left dot--secondary">Popis kurzu</h2>
+                <div class="about__featured">
+
+                        <div class="about__featured-item">
+                            <div class="about__featured-icon">
+                                <i class="fal fa-calendar-alt"></i>
+                            </div>
+
+                            <p class="about__featured-desc">2. 3. - 20. 5. 2022</p>
+                        </div>
+                        
+                        <div class="about__featured-item">
+                            <div class="about__featured-icon">
+                                <i class="fal fa-clock"></i>
+                            </div>
+
+                            <p class="about__featured-desc">90 minut</p>
+                        </div>
+
+                        <div class="about__featured-item">
+                            <div class="about__featured-icon">
+                                <i class="fal fa-map-marker-alt"></i>
+                            </div>
+
+                            <p class="about__featured-desc">Školící centrum</p>
+                        </div>
+                        
+                        <!-- <div class="about__featured-item">
+                            <div class="about__featured-icon">
+                                <i class="fal fa-user-tie"></i>
+                            </div>
+
+                            <p class="about__featured-desc">9 špičkových hostí</p>
+                        </div> -->
+                    
+                </div>
+            
+            <div class="about__desc">
+                <Markdown>
+                    Kurz je vhodný pre úplných začiatočníkov v oblasti webového, alebo mobilného vývoja, ktorí majú základné skúsenosti s programovaním, alebo pokročilé skúsenosti s využívaním počítača.
+
+                    V priebehu kurzu budeme prebrať jednotlivé dôležité koncepty a techniky obsiahnuté v knižnici React a taktiež koncepty nevyhnutné pre vytvorenie webovej aplikácie. Každú z týchto tém si precvičíme na jednoduchom cvičení.
+
+                    Súčasťou kurzu bude vytvorenie komplexnej aplikácie, ktorú budeme postupne rozširovať po každej lekcii.
+
+                    Absolvent kurzu bude schopný vytvoriť dynamickú webovú (po jednoduchých úpravách aj mobilnú) aplikáciu využitím knižnice React.
+                </Markdown>
+            </div>
+        </div>
+
+    </section>
+
+
+    <section id="lektor" class="lecturers conf light" style="z-index: 8">
+
+        <div class="wrapper">
+
+            <h2 class="dot dot--left dot--secondary">Lektor</h2>
+
+            <div class="lecturers-list">
+                    <div class="lecturer__item">
+
+                        <div class="lecturer__img">
+                            <div
+                                class="lecturer__position primary"
+                                style="background:#00A99D"
+                            >
+                                Lektor
+                            </div>
+                            <img src="/img/kurz-react-slavo.png"/>
+                        </div>
+
+                        <div class="lecturer__details">
+                            <h3>ing. Slavomír Kožár</h3>
+                            <h4>innovis s.r.o.</h4>
+
+                            <Markdown>
+                                Som absolvent Fakulty Elektrotechnické ČVUT a dlhoročný hrdý obyvateľ Strahova.
+
+                                Viac ako 10 rokov sa venujem webovému vývoju, kde vystriedal niekoľko rôznych technológií a frameworkov.  Vo vývojárskom živote sa dnes venuje hlavne Reactu a Laravelu.
+
+                                Už päť rokov sa venujem aj vyučovaniu programovania a webových technológií v bootcampoch a kurzoch.
+                            </Markdown>
+                        </div>
+
+                    </div>
+                                       
+            </div>
+        </div>
+
+    </section>
+
+
+    <section id="program" class="white conf program" style="z-index: 7">
+        <div class="wrapper line">
+            <h2 class="dot dot--left dot--secondary">Program</h2>
+
+            <div class="program-container">
+                <div class="program__item">
+                    <div class="program__section">
+                        {
+                            program.map(program => (
+                                <div class="program__row">
+                                    <div class="program__time">
+                                        {program.name}
+                                    </div>
+
+                                    <div class="program__content">
+                                        <strong>{program.heading}</strong>
+                                        <p>{program.text}</p>
+                                    </div>
+                                </div>
+                            ))
+                        }
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="podmienky" class="white conf program" style="z-index: 7">
+        <div class="wrapper line">
+            <h2 class="mb--s dot dot--left dot--secondary">FAQ</h2>
+
+            <div class="faq-container">
+                <div class="faq__item">
+
+                    <div class="faq__column">
+                        <h3>Otazka</h3>
+
+                        <div class="faq__content">
+                            <p>Text</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="faq__item">
+                    <div class="faq__column">
+                        <h3>Dalsia otazka</h3>
+
+                        <div class="faq__content">
+                            <p>Dalsiia odpoved</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <!-- <section id="sponzori" class="white conf sponsors" style="z-index: 4">
+        <div class="wrapper">
+
+            <h2 class="text--center dot dot--bottom dot--secondary">Partneri</h2>
+
+            <div class="logos-list">
+
+                                        <div class="logos__item">
+                        <img src="https://eduveo.e-zone.sk/storage/img/conference/partners/eranet_logo.png"
+                                alt="Eranet">
+                    </div>
+                                        <div class="logos__item">
+                        <img src="https://eduveo.e-zone.sk/storage/img/conference/partners/vovk.png"
+                                alt="VOvK">
+                    </div>
+                
+            </div>
+        </div>
+    </section> -->
+    
+    <section id="registrace" class="conf light">
+        <div class="wrapper">
+            <h2 class="text--center dot dot--bottom dot--primary">Registrace</h2>
+
+            <div class="d--flex jc--c">
+                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfQS_RbkWyUKvPHo09CgikpCaDOxfWzc9APp5GQn-nGvgzilA/viewform?embedded=true" width="800" height="1490" frameborder="0" marginheight="0" marginwidth="0">Načítava sa…</iframe>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="kontakt" class="white contact" style="z-index: 2">
+        <div class="wrapper dot line">
+            <div class="d--flex fw--w">
+
+                <div class="wrapper__column">
+                    <h2 class="mb--s dot dot--left dot--secondary">Kontakt</h2>
+
+                    <p class="mb--s subheading">
+                        V prípade akýchkoľvek otázok alebo nejasností nás neváhajte kontaktovať.
+                    </p>
+
+                    <p class="mb--s subheading">
+                        <a href="mailto:slavo.kozar@gmail.com">slavo.kozar@gmail.com</a>
+                    </p>
+                </div>
+
+
+                <div class="wrapper__column">
+                    <h2 class="mb--s dot dot--left dot--secondary">Organizátor</h2>
+                    <div class="organizator-container">
+                        <p>Test test</p>
+                    </div>
+                </div>
+
+
+        </div>
+        </div>
+    </section>
+
+    <MapaSkolici></MapaSkolici>
+</KurzLayout>
