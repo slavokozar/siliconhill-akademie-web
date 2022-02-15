@@ -2,7 +2,7 @@ export const courses = [
     {
         name:'React pro začátečníky',
         desc: 'Kurz je vhodný jak pro úplné začátečníky, tak i pro zkušené programátory, kteří chtějí poznat knihovnu React a využít ji pro vytvoření dynamické webové aplikace.',
-        url: 'kurz-react',
+        url: '/kurz-react',
         img: 'kurz-react.jpg',
         type: 'dlouhodobý kurz',
         start: '1. 3. 2022',
@@ -12,7 +12,7 @@ export const courses = [
     {
         name:'Python pro začátečníky',
         desc: 'V tomto kurzu si představíme jazyk Python a projdeme úplné základy programování jako jsou proměnné, podmínky, cykly nebo funkce. Naším cílem bude napsání vlastní aplikace s textovým rozhraním.',
-        url: 'kurz-python-pro-zacatecniky',
+        url: '/kurz-python-pro-zacatecniky',
         img: 'kurz-python.jpg',
         type: 'dlouhodobý kurz',
         start: '2. 3. 2022',
@@ -21,9 +21,9 @@ export const courses = [
     },
     {
         name:'Pandas - Zpracování dat v jazyce Python',
-        desc: 'V kurzu si na začátek ukážeme základy Pythonu, ale prolétneme to velice rychle, takže pokud si zapíšete kurz Pythonu pro začátečníky, tak uděláte dobře.',
-        url: 'kurz-pandas-spracovani-dat-v-python',
-        img: 'kurz-python.jpg',
+        desc: 'V kurzu si na začátek ukážeme základy Pythonu, pak si ukážeme možnosti knihovny Pandas - Práce s Pandas DataFrame a Series, práci s datovými typy, agregaci dat, načítání různých formátů a možnosti těch formátů ',
+        url: '/kurz-pandas-spracovani-dat-v-python',
+        img: 'kurz-pandas.png',
         type: 'dlouhodobý kurz',
         start: '2. 3. 2022',
         place: 'Školíci centrum SH',
@@ -32,7 +32,7 @@ export const courses = [
     {
         name:'AutoCAD',
         desc: 'Kurz je určen začátečníkům, kteří se snaží pokořit AutoCad a donutit ho vygenerovat výkres, který tak pracně nakreslili. Během kurzu zpracujeme jednoduchý půdorys garáže, kde si ukážeme jak výkres začít, uložit a dokončit.',
-        url: 'kurz-autocad',
+        url: '/kurz-autocad',
         img: 'kurz-autocad.jpg',
         type: 'série workshopů',
         start: '3. 3. 2022',
@@ -40,9 +40,9 @@ export const courses = [
         homepage: true
     },
     {
-        name:'Výpočetní metoda konečných prvků',
+        name:'Ansys - Výpočetní metoda konečných prvků',
         desc: 'Seznámení s možnostmi výpočtu konstrukcí pomocí metody konečných prvků, kdy bude představeno vytvoření modelu, stanovení výpočetní sítě a zadání okrajových podmínek. Představeny budou analýzy mechanické, teplotní nebo porušení materiálu.',
-        url: 'kurz-vypocetni-metoda-konecnych-prvku',
+        url: '/kurz-ansys-vypocetni-metoda-konecnych-prvku',
         img: 'kurz-vypocetni-metoda-konecnych-prvku.webp',
         type: 'série workshopů',
         start: '3. 3. 2022',
@@ -52,7 +52,7 @@ export const courses = [
     {
         name:'Java Spring',
         desc: 'Seznámení s možnostmi výpočtu konstrukcí pomocí metody konečných prvků, kdy bude představeno vytvoření modelu, stanovení výpočetní sítě a zadání okrajových podmínek. Představeny budou analýzy mechanické, teplotní nebo porušení materiálu.',
-        url: 'kurz-spring',
+        url: '/kurz-spring',
         img: 'kurz-spring.jpg',
         type: 'dlouhodobý kurz',
         start: '3. 3. 2022',
