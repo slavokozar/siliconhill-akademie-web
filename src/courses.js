@@ -45,7 +45,7 @@ export const courses = [
         url: '/kurz-ansys-vypocetni-metoda-konecnych-prvku',
         img: 'kurz-vypocetni-metoda-konecnych-prvku.webp',
         type: 'série workshopů',
-        start: '3. 3. 2022',
+        start: '2. 3. 2022',
         place: 'Školíci centrum SH',
         homepage: true
     },
@@ -56,6 +56,16 @@ export const courses = [
         img: 'kurz-spring.jpg',
         type: 'dlouhodobý kurz',
         start: '3. 3. 2022',
+        place: 'Školíci centrum SH',
+        homepage: true
+    },
+    {
+        name:'ArchiCad',
+        desc: 'Začínáš s Archicadem a nevíš si rady? Potřebuješ poradit s úkolem? Prijď na kurz pro začátečníky a mírně pokročilé!',
+        url: '/kurz-archicad',
+        img: 'kurz-archicad-logo.jpg',
+        type: 'dlouhodobý kurz',
+        start: '1. 3. 2022',
         place: 'Školíci centrum SH',
         homepage: true
     }
