@@ -5,8 +5,8 @@ export const courses = [
         url: '/kurz-react',
         img: 'kurz-react.jpg',
         type: 'dlouhodobý kurz',
-        start: '1. 3. 2022',
-        place: 'Školíci centrum SH',
+        start: '28. 2. 2022',
+        place: 'Koleje Strahov - upřesníme',
         homepage: true
     },
     {
@@ -15,8 +15,8 @@ export const courses = [
         url: '/kurz-python-pro-zacatecniky',
         img: 'kurz-python.jpg',
         type: 'dlouhodobý kurz',
-        start: '2. 3. 2022',
-        place: 'Školíci centrum SH',
+        start: '28. 2. 2022',
+        place: 'Koleje Strahov - upřesníme',
         homepage: true
     },
     {
@@ -25,8 +25,8 @@ export const courses = [
         url: '/kurz-pandas-spracovani-dat-v-python',
         img: 'kurz-pandas.png',
         type: 'dlouhodobý kurz',
-        start: '2. 3. 2022',
-        place: 'Školíci centrum SH',
+        start: '28. 2. 2022',
+        place: 'Koleje Strahov - upřesníme',
         homepage: true
     },
     {
@@ -35,7 +35,7 @@ export const courses = [
         url: '/kurz-autocad',
         img: 'kurz-autocad.jpg',
         type: 'série workshopů',
-        start: '3. 3. 2022',
+        start: '28. 2. 2022',
         place: 'Školíci centrum SH',
         homepage: true
     },
@@ -55,8 +55,8 @@ export const courses = [
         url: '/kurz-spring',
         img: 'kurz-spring.jpg',
         type: 'dlouhodobý kurz',
-        start: '3. 3. 2022',
-        place: 'Školíci centrum SH',
+        start: '28. 2. 2022',
+        place: 'Koleje Strahov - upřesníme',
         homepage: true
     },
     {
