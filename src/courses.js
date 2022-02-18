@@ -51,7 +51,7 @@ export const courses = [
     },
     {
         name:'Java Spring',
-        desc: 'Seznámení s možnostmi výpočtu konstrukcí pomocí metody konečných prvků, kdy bude představeno vytvoření modelu, stanovení výpočetní sítě a zadání okrajových podmínek. Představeny budou analýzy mechanické, teplotní nebo porušení materiálu.',
+        desc: 'Kurz je vhodný pre každého kto sa už stretol s Javou (prípadne Java SE) a chcel by si rozšíriť znalosti a schopnosti s programovaním backednových systémov.',
         url: '/kurz-spring',
         img: 'kurz-java-spring.png',
         type: 'dlouhodobý kurz',
