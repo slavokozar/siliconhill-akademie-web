@@ -7,39 +7,14 @@ import MapaSkolici from '../components/MapaSkolici.astro';
 
 const program = [
     {
-        name: '1. Lekcia',
-        heading: 'Úvod do webu a Reactu',
-        text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
+        name: '1. Lekce',
+        heading: 'Rychlé základy Pythonu',
+        text: 'Velmi rychle projedeme základy jazyka Python. Datové typy, operace, listy, slovníky, instalace knihoven, jupyter notebooky/google colab.'
     },
     {
-        name: '2. Lekcia',
-        heading: 'State a Lifecycle React komponenty',
-        text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
-    },
-    {
-        name: '3. Lekcia',
-        heading: 'Formuláre',
-        text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
-    },
-    {
-        name: '4. Lekcia',
-        heading: 'Zoznamy a polia',
-        text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
-    },
-    {
-        name: '5. Lekcia',
-        heading: 'Zdieľanie stavu komponent',
-        text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
-    },
-    {
-        name: '6. Lekcia',
-        heading: 'Práca s API',
-        text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
-    },
-    {
-        name: '7. Lekcia',
-        heading: 'Komplexná správa stavu komponet',
-        text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
+        name: '2. Lekce',
+        heading: 'Knihovna Pandas',
+        text: 'Pandas Dataframe, Series, načítání csv/excel formátů a základní funkce pro zjištění chybějících dat.'
     }
 ]
 
@@ -61,7 +36,7 @@ const program = [
                                 <li class="nav__item">
                                     <a href="/kurzy">
                                         <img src="/assets/icons/back-icon.svg" alt="">
-                                        <p>Spět  <span class="sm:d--none">na kurzy</span></p>
+                                        <p>Zpět  <span class="sm:d--none">na kurzy</span></p>
                                     </a>
                                 </li>
                             </ul>
@@ -132,7 +107,7 @@ const program = [
                                 <i class="fal fa-calendar-alt"></i>
                             </div>
 
-                            <p class="about__featured-desc">2. 3. - 20. 5. 2022</p>
+                            <p class="about__featured-desc">2. 3. - 15. 5. 2022</p>
                         </div>
                         
                         <div class="about__featured-item">
@@ -148,17 +123,8 @@ const program = [
                                 <i class="fal fa-map-marker-alt"></i>
                             </div>
 
-                            <p class="about__featured-desc">Školící centrum</p>
+                            <p class="about__featured-desc">Koleje Strahov - upřesníme</p>
                         </div>
-                        
-                        <!-- <div class="about__featured-item">
-                            <div class="about__featured-icon">
-                                <i class="fal fa-user-tie"></i>
-                            </div>
-
-                            <p class="about__featured-desc">9 špičkových hostí</p>
-                        </div> -->
-                    
                 </div>
             
             <div class="about__desc">
@@ -248,21 +214,28 @@ const program = [
 
             <div class="faq-container">
                 <div class="faq__item">
-
                     <div class="faq__column">
-                        <h3>Otazka</h3>
+                        <h3>Co potřebuju na akademii?</h3>
 
                         <div class="faq__content">
-                            <p>Text</p>
+                            <p>Vlastní notebook</p>
+                        </div>
+                        <div class="faq__content">
+                            <p>Platné základní a síťové členství klubu Silicon Hill</p>
+                        </div>
+                        <div class="faq__content">
+                            <p>Chuť se učit</p>
                         </div>
                     </div>
                 </div>
                 <div class="faq__item">
                     <div class="faq__column">
-                        <h3>Dalsia otazka</h3>
-
+                        <h3>Můžu se na akademii zaregistrovat, ikdyž nejsem ze Strahova?</h3>
                         <div class="faq__content">
-                            <p>Dalsiia odpoved</p>
+                            <p>Ano, stačí se pouze zaregistrovat do klubu, mít základní a síťové členství (800 Kč),</p>
+                        </div>
+                        <div class="faq__content">
+                            <p>pak pro tebe budou dostupné všechny akademie v rámci těchto členství</p>
                         </div>
                     </div>
                 </div>
@@ -270,40 +243,19 @@ const program = [
         </div>
     </section>
 
-    
-    <!-- <section id="sponzori" class="white conf sponsors" style="z-index: 4">
-        <div class="wrapper">
-
-            <h2 class="text--center dot dot--bottom dot--secondary">Partneri</h2>
-
-            <div class="logos-list">
-
-                                        <div class="logos__item">
-                        <img src="https://eduveo.e-zone.sk/storage/img/conference/partners/eranet_logo.png"
-                                alt="Eranet">
-                    </div>
-                                        <div class="logos__item">
-                        <img src="https://eduveo.e-zone.sk/storage/img/conference/partners/vovk.png"
-                                alt="VOvK">
-                    </div>
-                
-            </div>
-        </div>
-    </section> -->
-    
     <section id="registracia" class="conf light">
         <div class="wrapper">
-            <h2 class="text--center dot dot--bottom dot--primary">Registrácia</h2>
+            <h2 class="text--center dot dot--bottom dot--primary">Registrace</h2>
 
             <div class="d--flex jc--c">
-                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfQS_RbkWyUKvPHo09CgikpCaDOxfWzc9APp5GQn-nGvgzilA/viewform?embedded=true" width="800" height="1490" frameborder="0" marginheight="0" marginwidth="0">Načítava sa…</iframe>
+                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdYPXZL00YGwDbXUeRVQlu4hyKF3LS_x2f8oekWfTLzAjxOBw/viewform?embedded=true" width="800" height="1725" frameborder="0" marginheight="0" marginwidth="0">Načítání…</iframe>
             </div>
             
         </div>
     </section>
 
 
-    <section id="kontakt" class="white contact" style="z-index: 2">
+    <section id="kontakt" class="white contact" style="z-index: 1">
         <div class="wrapper dot line">
             <div class="d--flex fw--w">
 
@@ -313,13 +265,15 @@ const program = [
                     <p class="mb--s subheading">
                         V případě jakýchkoliv otázek nebo nejasností nás neváhajte kontaktovat.
                     </p>
-
                     <p class="mb--s subheading">
-                        <a href="mailto:slavo.kozar@gmail.com">slavo.kozar@gmail.com</a>
-                    </p>
-                    <p class="mb--s subheading">
+                        Manažer pro vzdělávání
                         <a href="mailto:j.hanus@sh.cvut.cz.com">j.hanus@sh.cvut.cz</a>
                     </p>
+                    <p class="mb--s subheading">
+                        Developer stránek
+                        <a href="mailto:slavo.kozar@gmail.com">slavo.kozar@gmail.com</a>
+                    </p>
+
                 </div>
             </div>
         </div>

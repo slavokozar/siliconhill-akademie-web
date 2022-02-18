@@ -36,7 +36,7 @@ export const courses = [
         img: 'kurz-autocad.jpg',
         type: 'série workshopů',
         start: '28. 2. 2022',
-        place: 'Školíci centrum SH',
+        place: 'Koleje Strahov - upřesníme',
         homepage: true
     },
     {
@@ -53,7 +53,7 @@ export const courses = [
         name:'Java Spring',
         desc: 'Seznámení s možnostmi výpočtu konstrukcí pomocí metody konečných prvků, kdy bude představeno vytvoření modelu, stanovení výpočetní sítě a zadání okrajových podmínek. Představeny budou analýzy mechanické, teplotní nebo porušení materiálu.',
         url: '/kurz-spring',
-        img: 'kurz-spring.jpg',
+        img: 'kurz-java-spring.png',
         type: 'dlouhodobý kurz',
         start: '28. 2. 2022',
         place: 'Koleje Strahov - upřesníme',
