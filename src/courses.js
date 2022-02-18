@@ -36,7 +36,7 @@ export const courses = [
         img: 'kurz-autocad.jpg',
         type: 'série workshopů',
         start: '28. 2. 2022',
-        place: 'Školíci centrum SH',
+        place: 'Koleje Strahov - upřesníme',
         homepage: true
     },
     {
