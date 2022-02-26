@@ -5,8 +5,8 @@ export const courses = [
         url: '/kurz-react',
         img: 'kurz-react.jpg',
         type: 'dlouhodobý kurz',
-        start: '28. 2. 2022',
-        place: 'Koleje Strahov - upřesníme',
+        start: '8. 3. 2022',
+        place: 'Blok 7 - Zasedací místnost (suterén)',
         homepage: true
     },
     {
@@ -16,7 +16,7 @@ export const courses = [
         img: 'kurz-python.jpg',
         type: 'dlouhodobý kurz',
         start: '28. 2. 2022',
-        place: 'Koleje Strahov - upřesníme',
+        place: 'Blok 7 - Zasedací místnost (suterén)',
         homepage: true
     },
     {
@@ -26,7 +26,7 @@ export const courses = [
         img: 'kurz-pandas.png',
         type: 'dlouhodobý kurz',
         start: '28. 2. 2022',
-        place: 'Koleje Strahov - upřesníme',
+        place: 'Blok 7 - Zasedací místnost (suterén)',
         homepage: true
     },
     {
@@ -35,18 +35,8 @@ export const courses = [
         url: '/kurz-autocad',
         img: 'kurz-autocad.jpg',
         type: 'série workshopů',
-        start: '28. 2. 2022',
-        place: 'Koleje Strahov - upřesníme',
-        homepage: true
-    },
-    {
-        name:'Ansys - Výpočetní metoda konečných prvků',
-        desc: 'Seznámení s možnostmi výpočtu konstrukcí pomocí metody konečných prvků, kdy bude představeno vytvoření modelu, stanovení výpočetní sítě a zadání okrajových podmínek. Představeny budou analýzy mechanické, teplotní nebo porušení materiálu.',
-        url: '/kurz-ansys-vypocetni-metoda-konecnych-prvku',
-        img: 'kurz-vypocetni-metoda-konecnych-prvku.webp',
-        type: 'série workshopů',
-        start: '2. 3. 2022',
-        place: 'Školíci centrum SH',
+        start: '29. 2. 2022',
+        place: 'Školíci centrum Silicon Hill',
         homepage: true
     },
     {
@@ -55,8 +45,8 @@ export const courses = [
         url: '/kurz-spring',
         img: 'kurz-java-spring.png',
         type: 'dlouhodobý kurz',
-        start: '28. 2. 2022',
-        place: 'Koleje Strahov - upřesníme',
+        start: '10. 3. 2022',
+        place: 'Školíci centrum Silicon Hill',
         homepage: true
     },
     {
@@ -66,7 +56,7 @@ export const courses = [
         img: 'kurz-archicad-logo.jpg',
         type: 'dlouhodobý kurz',
         start: '1. 3. 2022',
-        place: 'Školíci centrum SH',
+        place: 'Studovna B6',
         homepage: true
     }
 ]
