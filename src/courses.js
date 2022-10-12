@@ -5,7 +5,7 @@ export const courses = [
         url: '/kurz-react',
         img: 'kurz-react.jpg',
         type: 'dlouhodobý kurz',
-        start: '8. 3. 2022',
+        start: '26. 10. 2022 - první lekce',
         place: 'Blok 7 - Zasedací místnost (suterén)',
         homepage: true
     },
@@ -15,7 +15,7 @@ export const courses = [
         url: '/kurz-python-pro-zacatecniky',
         img: 'kurz-python.jpg',
         type: 'dlouhodobý kurz',
-        start: '28. 2. 2022',
+        start: '26. 10. 2022 - první lekce',
         place: 'Blok 7 - Zasedací místnost (suterén)',
         homepage: true
     },
@@ -25,7 +25,7 @@ export const courses = [
         url: '/kurz-pandas-spracovani-dat-v-python',
         img: 'kurz-pandas.png',
         type: 'dlouhodobý kurz',
-        start: '28. 2. 2022',
+        start: '25. 10. 2022 - první lekce',
         place: 'Blok 7 - Zasedací místnost (suterén)',
         homepage: true
     },
@@ -35,7 +35,7 @@ export const courses = [
         url: '/kurz-autocad',
         img: 'kurz-autocad.jpg',
         type: 'série workshopů',
-        start: '29. 2. 2022',
+        start: '25. 10. 2022 - první lekce',
         place: 'Školíci centrum Silicon Hill',
         homepage: true
     },
@@ -45,7 +45,7 @@ export const courses = [
         url: '/kurz-spring',
         img: 'kurz-java-spring.png',
         type: 'dlouhodobý kurz',
-        start: '10. 3. 2022',
+        start: 'týden od 24. 10. 2022 - upřesníme',
         place: 'Školíci centrum Silicon Hill',
         homepage: true
     },
@@ -54,9 +54,19 @@ export const courses = [
         desc: 'Začínáš s Archicadem a nevíš si rady? Potřebuješ poradit s úkolem? Prijď na kurz pro začátečníky a mírně pokročilé!',
         url: '/kurz-archicad',
         img: 'kurz-archicad-logo.jpg',
+        type: 'série workshopů',
+        start: '26. 10. 2022 - první lekce',
+        place: 'Školíci centrum Silicon Hill',
+        homepage: true
+    },
+        {
+        name:'Porkočilé webové technologie',
+        desc: 'Zajímá tě, jak jsou dnes tvořeny webové stránky? Chtěl by jsi prohlédnout hlouběji do tajů JavaScriptu a moderních technologíí webu? Pak je tento kurz právě pro tebe. Každou hodinu si představíme nejrůznější moderní technologie, které se dnes reálně využívají.',
+        url: '/kurz-webove-technologie',
+        img: 'kurz-web-tech-logo.jpg',
         type: 'dlouhodobý kurz',
-        start: '1. 3. 2022',
-        place: 'Studovna B6',
+        start: '27. 10. 2022 - první lekce',
+        place: 'Blok 7 - Zasedací místnost (suterén)',
         homepage: true
     }
 ]

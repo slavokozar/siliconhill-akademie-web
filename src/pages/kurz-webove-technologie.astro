@@ -8,9 +8,34 @@ import MapaSkolici from '../components/MapaSkolici.astro';
 const program = [
     {
         name: '1. Lekce',
-        heading: 'ArchiCad lekce.',
-        text: 'Doplníme.'
-    }
+        heading: 'Doplníme',
+        text: 'Doplníme'
+    },
+    {
+        name: '2. Lekce',
+        heading: 'Doplníme',
+        text: 'Doplníme'
+    },
+    {
+        name: '3. Lekce',
+        heading: 'Doplníme',
+        text: 'Doplníme'
+    },
+    {
+        name: '4. Lekce',
+        heading: 'Doplníme',
+        text: 'Doplníme'
+    },
+    {
+        name: '5. Lekce',
+        heading: 'Doplníme',
+        text: 'Doplníme'
+    },
+    {
+        name: '6. Lekce',
+        heading: 'Doplníme',
+        text: 'Doplníme'
+    },
 ]
 
 ---
@@ -22,7 +47,7 @@ const program = [
                     <div class="nav__group d--flex">
                         <div class="nav__column logo">
                             <a href="#uvod">
-                                AutoCad
+                                Python pro začátečníky
                             </a>
                         </div>
 
@@ -37,6 +62,7 @@ const program = [
                             </ul>
                         </div>
                     </div>
+
 
                     <div class="nav__group d--flex">
                         <div class="nav__column navbar">
@@ -64,16 +90,16 @@ const program = [
             <div class="header__content">
 
                 <div class="header-tags-list">
-                    <span class="header-tags__item">série workshopů</span>
+                    <span class="header-tags__item">dlouhodobý kurz</span>
                 </div>
 
-                <h1>AutoCad</h1>
+                <h1>Pokročilé webové technologi</h1>
 
                 <p class="header__date">27. 10. 2022 - první lekce</p>
-                <p class="header__place">Školící centrum</p>
+                <p class="header__place">Blok 7 - Zasedací místnost (suterén)</p>
 
 
-                <a href="#registrace" class="btn btn--primary btn--l">Chci se registrovat</a>
+                <a href="#registracia" class="btn btn--primary btn--l">Chci se registrovat</a>
 
                 <a href="#about" class="header-read__more">
                     <img src="/assets/icons/header-more.svg" alt="">
@@ -82,7 +108,7 @@ const program = [
             </div>
 
             <div class="header-img--bg">
-                <img src="/img/kurz-autocad-screen.jpg" alt="">
+                <img src="/img/kurz-web-tech-logo.jpg" alt="">
             </div>
 
         </div>
@@ -101,7 +127,7 @@ const program = [
                                 <i class="fal fa-calendar-alt"></i>
                             </div>
 
-                            <p class="about__featured-desc">27. 10. - upřesníme</p>
+                            <p class="about__featured-desc">27. 10. 2022 - první lekce</p>
                         </div>
                         
                         <div class="about__featured-item">
@@ -109,7 +135,7 @@ const program = [
                                 <i class="fal fa-clock"></i>
                             </div>
 
-                            <p class="about__featured-desc">90 minut</p>
+                            <p class="about__featured-desc">120 minut</p>
                         </div>
 
                         <div class="about__featured-item">
@@ -117,18 +143,18 @@ const program = [
                                 <i class="fal fa-map-marker-alt"></i>
                             </div>
 
-                            <p class="about__featured-desc">Školící centrum</p>
+                            <p class="about__featured-desc">Blok 7 - Zasedací místnost (suterén)</p>
                         </div>
-                    
                 </div>
             
             <div class="about__desc">
                 <Markdown>
-                    Začínáš s Archicadem a nevíš si rady? Potřebuješ poradit s úkolem? Prijď na kurz pro začátečníky a mírně pokročilé!
+                    Zajímá tě, jak jsou dnes tvořeny webové stránky? Chtěl by jsi prohlédnout hlouběji do tajů JavaScriptu a moderních technologíí webu? Pak je tento kurz právě pro tebe. Každou hodinu si představíme nejrůznější moderní technologie, které se dnes reálně využívají.
 
-                    Doporučujeme si nosit vlastní počítače s ArchiCadem, na ČVUT je možné si to stáhnout přes [Download ČVUT](https://download.cvut.cz/)
+                    Kurz bude formou semináře, kdy nejprve představím technologii, vysvětlíme si na jednoduché ukázce jak funguje a následně se podíváme na reálně nasazení. Pro ukázky budu používat projekt [IoT platformy](https://iotdomu.cz/), který vyvíjím již 3 roky. Na tomto projektu se podíváme na opravdu různorodé moderní technologie: WebSocket, ServiceWorker, PWA, MongoDB, InfluxDB, Docker, DevOps, MQTT, MicroService architekturu a mnoho dalšího.
 
-                    Jinak kurz funguje jako **"bring your own license"**. Na připravené počítače, kde budete přihlášeni pod vlastním účtem si budete muset aktivovat licenci. Studenti ČVUT ji mají zadarmo od školy.
+                    Témata budeme volit podle toho, co Vás bude nejvíce zajímat. Hodina bude pravděpodobně jednou za 14 dní a na některé si každý vyzkoušíte co dnes obnáší nasadit komplexní aplikaci na server pomocí dockeru (spoiler: je to až překvapivě jednoduché).
+
                 </Markdown>
             </div>
         </div>
@@ -152,15 +178,16 @@ const program = [
                             >
                                 Lektor
                             </div>
-                            <img src="/img/kurz-havranek.jpg"/>
+                            <img src="/img/kurz_skalimat_python.jpg"/>
                         </div>
 
                         <div class="lecturer__details">
-                            <h3>Bc. Václav Havránek - Vašek</h3>
-                            <Markdown>
-                                Studuji magisterský obor Fakulty architektury ČVUT a předtím jsem studoval na Střední průmyslové škole stavební v Havlíčkově Brodě. Dohromady už s archicadem pracuji už 6 let.
+                            <h3>Martin Skalický</h3>
 
-                                Všechny semestrální práce jsem zpracovával v tomto programu, včetně bakalářské práce, která byla formou DSP, a vizualizací. Svoje schopnosti s tímto program jsem dál ověřil a rozvíjel v praxi.
+                            <Markdown>
+                                Jsem studentem Fakulty informačních technologií ČVUT, aktuálně na magisterském programu Webového inženýrství. Programování se věnuji již více jak šest let a z toho 2 roky pracovně. Ve volném čase, když zrovna naprogramuji, tak si hraji s elektrotechnikou - 3D tiskárnou, kvadrokoptérou či mikročipy.
+
+                                Baví mě předávat své vědomosti dál a pomáhat tak ostatním - neváhejte a přijďte se podívat na některým z mých kurzů.
                             </Markdown>
                         </div>
 
@@ -207,27 +234,27 @@ const program = [
             <div class="faq-container">
                 <div class="faq__item">
                     <div class="faq__column">
-                        <h3>Co potřebuju na akademii?</h3>
+                        <h3>Co potřebuju na akademii Pokročilých webových technologií?</h3>
                         <div class="faq__content">
                             <p>Platné základní a síťové členství klubu Silicon Hill</p>
                         </div>
                         <div class="faq__content">
-                            <p>Možnost donést si vlastní počítač s ArchiCadem (studenstkou licenci si můžete sehnat přes <a href=https://download.cvut.cz/>ČVUT</a>)</p>
+                            <p>Chuť se učit</p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-
     
-    <section id="registrace" class="conf light">
+    <section id="registracia" class="conf light">
         <div class="wrapper">
             <h2 class="text--center dot dot--bottom dot--primary">Registrace</h2>
 
             <div class="d--flex jc--c">
-                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeT6G0bblSPNak_8t5JuNS0AxDdWAlWchapcbRhBcR-tw1hYQ/viewform?embedded=true" width="800" height="1300" frameborder="0" marginheight="0" marginwidth="0">Načítání…</iframe>
+                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfCg87cfI5UcHaGcYLzf-sMcd6PNxsH6jt5Mdu4nyUTHuvJNA/viewform?embedded=true" width="800" height="1895" frameborder="0" marginheight="0" marginwidth="0">Načítání…</iframe>
             </div>
+
         </div>
     </section>
 
@@ -242,7 +269,6 @@ const program = [
                     <p class="mb--s subheading">
                         V případě jakýchkoliv otázek nebo nejasností nás neváhajte kontaktovat.
                     </p>
-
                     <p class="mb--s subheading">
                         Manažer pro vzdělávání
                         <a href="mailto:j.hanus@sh.cvut.cz.com">j.hanus@sh.cvut.cz</a>
@@ -256,5 +282,7 @@ const program = [
         </div>
     </section>
 
+
     <MapaSkolici></MapaSkolici>
+
 </KurzLayout>
