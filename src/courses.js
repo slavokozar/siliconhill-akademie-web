@@ -5,7 +5,7 @@ export const courses = [
         url: '/kurz-react',
         img: 'kurz-react.jpg',
         type: 'dlouhodobý kurz',
-        start: '26. 10. 2022 - první lekce',
+        start: '16. 3. 2023',
         place: 'Blok 7 - Zasedací místnost (suterén)',
         homepage: true
     },
@@ -15,7 +15,7 @@ export const courses = [
         url: '/kurz-python-pro-zacatecniky',
         img: 'kurz-python.jpg',
         type: 'dlouhodobý kurz',
-        start: '26. 10. 2022 - první lekce',
+        start: '7. 3. 2023',
         place: 'Blok 7 - Zasedací místnost (suterén)',
         homepage: true
     },
@@ -25,7 +25,7 @@ export const courses = [
         url: '/kurz-pandas-spracovani-dat-v-python',
         img: 'kurz-pandas.png',
         type: 'dlouhodobý kurz',
-        start: '25. 10. 2022 - první lekce',
+        start: '7. 3. 2023',
         place: 'Blok 7 - Zasedací místnost (suterén)',
         homepage: true
     },
@@ -35,27 +35,27 @@ export const courses = [
         url: '/kurz-autocad',
         img: 'kurz-autocad.jpg',
         type: 'série workshopů',
-        start: '25. 10. 2022 - první lekce',
+        start: '6. 3. 2023',
         place: 'Školíci centrum Silicon Hill',
         homepage: true
     },
-    {
-        name:'Java Spring',
-        desc: 'Kurz je vhodný pre každého kto sa už stretol s Javou (prípadne Java SE) a chcel by si rozšíriť znalosti a schopnosti s programovaním backednových systémov.',
-        url: '/kurz-spring',
-        img: 'kurz-java-spring.png',
-        type: 'dlouhodobý kurz',
-        start: 'týden od 24. 10. 2022 - upřesníme',
-        place: 'Školíci centrum Silicon Hill',
-        homepage: true
-    },
+    // {
+    //     name:'Java Spring',
+    //     desc: 'Kurz je vhodný pre každého kto sa už stretol s Javou (prípadne Java SE) a chcel by si rozšíriť znalosti a schopnosti s programovaním backednových systémov.',
+    //     url: '/kurz-spring',
+    //     img: 'kurz-java-spring.png',
+    //     type: 'dlouhodobý kurz',
+    //     start: 'týden od 24. 10. 2022 - upřesníme',
+    //     place: 'Školíci centrum Silicon Hill',
+    //     homepage: true
+    // },
     {
         name:'ArchiCad',
         desc: 'Začínáš s Archicadem a nevíš si rady? Potřebuješ poradit s úkolem? Prijď na kurz pro začátečníky a mírně pokročilé!',
         url: '/kurz-archicad',
         img: 'kurz-archicad-logo.jpg',
         type: 'série workshopů',
-        start: '26. 10. 2022 - první lekce',
+        start: '8. 3. 2023',
         place: 'Školíci centrum Silicon Hill',
         homepage: true
     },
@@ -65,7 +65,7 @@ export const courses = [
         url: '/kurz-webove-technologie',
         img: 'kurz-web-tech-logo.jpg',
         type: 'dlouhodobý kurz',
-        start: '27. 10. 2022 - první lekce',
+        start: '9. 3. 2023',
         place: 'Blok 7 - Zasedací místnost (suterén)',
         homepage: true
     }
